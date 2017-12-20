@@ -1,0 +1,118 @@
+@charset "UTF-8";
+html, body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend, input, b {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol, dl {
+  list-style: none; }
+
+img {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+i, em {
+  font-style: normal; }
+
+b, strong {
+  font-weight: normal; }
+
+body {
+  font-family: "微软雅黑"; }
+
+input, a {
+  outline: none; }
+
+/*清除input自带边框*/
+#header {
+  width: 980px;
+  margin: 0 auto;
+  height: 100px;
+  background: url(../img/zhucelogo.jpg) no-repeat 0 0; }
+
+#header a {
+  float: left; }
+
+#header p {
+  float: left;
+  font: 14px/90px "微软雅黑";
+  margin-left: 480px; }
+  #header p span {
+    float: left; }
+
+#header span:last-child {
+  color: #cc0000; }
+
+#section {
+  width: 1000px;
+  height: 350px;
+  margin: 50px auto; }
+  #section .left {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background: url(../img/denglulogo.jpg) no-repeat 0 0; }
+  #section .right {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-left: 120px;
+    box-sizing: border-box; }
+    #section .right h3 {
+      font: 20px/40px "微软雅黑";
+      text-align: center;
+      margin-left: 85px;
+      width: 140px;
+      border-bottom: 2px solid #CC0000; }
+    #section .right input {
+      width: 290px;
+      height: 40px;
+      border: 1px solid #CECECE;
+      font: 16px/40px "微软雅黑";
+      color: #CECECE;
+      margin-top: 20px;
+      text-align: left; }
+    #section .right p a {
+      float: left;
+      font: 12px/30px "微软雅黑";
+      color: black;
+      margin-left: 25px;
+      margin-top: 5px; }
+    #section .right p a:last-child {
+      color: blue;
+      margin-left: 130px; }
+    #section .right img {
+      position: absolute;
+      left: 122px;
+      top: 180px; }
+    #section .right #btn {
+      font: 14px/40px "微软雅黑";
+      color: white;
+      background: red;
+      text-align: center;
+      border-radius: 3px; }
+    #section .right #tubiao {
+      position: absolute;
+      left: 118px;
+      top: 277px; }
+
+#footer {
+  width: 980px;
+  margin: 0 auto;
+  height: 55px;
+  background: white;
+  padding-top: 15px;
+  box-sizing: border-box; }
+  #footer a {
+    float: left;
+    font: 14px/16px "微软雅黑";
+    color: black; }
+  #footer span {
+    font: 14px/16px "微软雅黑";
+    float: right; }
+
+/*# sourceMappingURL=denglu.css.map */

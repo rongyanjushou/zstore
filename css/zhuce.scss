@@ -1,0 +1,141 @@
+@charset "utf-8";
+html,body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,input,b{margin:0; padding:0;}
+ul,li,ol,dl{list-style:none;}
+img{border:0;}
+img{display:block;}
+a{text-decoration:none;}
+i,em{font-style: normal;}
+b,strong{font-weight:normal;}
+body{font-family:"微软雅黑";}
+input,a{outline:none;}/*清除input自带边框*/  
+#header,#nav,#section,#footer{
+    width: 980px;
+    margin: 0 auto;
+}
+#header{
+    height: 100px;
+    background: url(../img/zhucelogo.jpg) no-repeat 0 0;
+}
+#header a{
+    float: left;
+}
+#header p{
+    float: left;
+    font:14px/90px "微软雅黑";
+    margin-left: 480px;
+    span{
+        float: left;
+    }
+}
+#header span:last-child{
+    color:#cc0000;
+}
+#nav{
+    height: 60px;
+    background:#fafafa;
+    p{
+        font:18px/60px "微软雅黑";
+        text-indent: 90px;
+    }
+}
+
+#section{
+    height: 750px;
+}
+#section .left{
+    float: left;
+    width: 60%;
+    height: 750px;
+    background: url(../img/yanzheng.jpg) no-repeat 353px 164px;
+    padding-left: 85px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    em{
+        margin-left: 125px;
+        font:14px/38px "微软雅黑";
+        color: blue;
+    }
+    input{
+        width: 288px;
+        height: 38px;
+        border: 1px solid #cecece;
+        margin-top: 15px;
+        margin-left: 16px;
+    }
+    input:nth-of-type(2){
+         width: 170px;
+    }
+    input:nth-of-type(3){
+         width: 170px;
+    }
+    input:nth-of-type(5){
+        margin-left: 0px;
+    }
+    #yanzheng{
+        width: 98px;
+        margin: 0;
+        background: url(../img/yanzheng.jpg);
+    }
+    .blue{
+        color: blue;
+    }
+    p{
+        text-indent:77px ;
+        font:10px/20px "微软雅黑";
+        color: #CECECE;
+        margin-top: 5px;
+    }
+    .last{
+        margin-bottom: 25px;
+    }
+    #rad{
+        width: 10px;
+        height: 10px;
+        margin: 0;
+        margin-left: 83px;
+    }
+   .foot{
+        font:10px/10px "微软雅黑";
+    }
+    #btn{
+        width: 290px;
+        height: 40px;
+        background: red;
+        font:16px/40px "微软雅黑";
+        color:white;
+        text-align: center;
+        margin-left: 70px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+#section .right{
+    float: left;
+    width: 40%;
+    height: 750px;
+    background: white;
+    padding-top: 25px;
+    padding-left: 105px;
+    box-sizing: border-box;
+    p{
+        font:12px/30px "微软雅黑";
+    }
+    img{
+        margin-top: 20px;
+    }
+}
+#footer{
+    height: 55px;
+    background: white;
+    padding-top: 15px;
+    box-sizing: border-box;
+    a{
+       float: left;
+       font:14px/16px "微软雅黑";
+       color: black;
+    }
+    span{
+        font:14px/16px "微软雅黑";
+        float: right;
+    }
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+#top, #header, #nav, #banner, #dongyu, #lingquan, #tongcheng, #zhixuan, #pinpai, #dianzi, #shuma, #rexiao, #peifu, #bottom, #footer {
+  width: 1270px; }
+
+/*澶撮儴*/
+#top {
+  height: 30px;
+  background: pink; }
+
+#header {
+  height: 120px;
+  background: green; }
+
+#nav {
+  height: 40px;
+  background: orange; }
+
+#banner {
+  height: 400px;
+  background: blue; }
+
+#dongyu {
+  height: 600px;
+  background: pink; }
+
+#lingquan {
+  height: 153px;
+  background: green; }
+
+#tongcheng {
+  height: 640px;
+  background: blue; }
+
+#zhixuan {
+  height: 780px;
+  background: pink; }
+
+#pinpai {
+  height: 420px;
+  background: green; }
+
+#dianzi {
+  height: 645px;
+  background: orange; }
+
+#shuma {
+  height: 730px;
+  background: blue; }
+
+#rexiao {
+  height: 750px;
+  background: pink; }
+
+#peifu {
+  height: 155px;
+  background: green; }
+
+#bottom {
+  height: 180px;
+  background: orange; }
+
+#footer {
+  height: 175px;
+  background: blue; }
+
+/*# sourceMappingURL=shouye.css.map */
