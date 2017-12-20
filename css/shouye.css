@@ -1,66 +1,509 @@
 @charset "UTF-8";
-#top, #header, #nav, #banner, #dongyu, #lingquan, #tongcheng, #zhixuan, #pinpai, #dianzi, #shuma, #rexiao, #peifu, #bottom, #footer {
-  width: 1270px; }
+html, body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend, input, b {
+  margin: 0;
+  padding: 0; }
 
-/*澶撮儴*/
+ul, li, ol, dl {
+  list-style: none; }
+
+img {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+i, em {
+  font-style: normal; }
+
+b, strong {
+  font-weight: normal; }
+
+body {
+  font-family: "微软雅黑"; }
+
+input, a {
+  outline: none; }
+
+a {
+  color: black; }
+
+/*清除input自带边框*/
+#top, #header, #nav, #banner, #dongyu, #lingquan, #tongcheng, #zhixuan, #pinpai, #dianzi, #shuma, #rexiao, #peifu, #bottom, #footer {
+  width: 1260px;
+  margin: 0 auto; }
+
+/*头部*/
 #top {
-  height: 30px;
-  background: pink; }
+  position: relative;
+  height: 30px; }
+  #top ul li {
+    float: left;
+    margin-left: 30px; }
+    #top ul li span {
+      color: blue;
+      font: 12px/30px "微软雅黑"; }
+    #top ul li em {
+      font: 12px/30px "微软雅黑"; }
+    #top ul li a {
+      font: 12px/30px "微软雅黑"; }
+  #top ul li:nth-of-type(4) {
+    margin-left: 310px; }
+  #top ul li:nth-of-type(7) {
+    margin-right: 30px; }
+  #top img {
+    position: absolute;
+    left: 985px;
+    top: 7px; }
+  #top img:first-child {
+    left: 960px;
+    top: 10px; }
 
 #header {
-  height: 120px;
-  background: green; }
+  position: relative;
+  padding-left: 190px;
+  padding-top: 37px;
+  box-sizing: border-box;
+  position: relative;
+  height: 120px; }
+  #header a img {
+    position: absolute;
+    left: 38px;
+    top: 32px; }
+  #header input {
+    margin-left: 70px;
+    box-sizing: border-box;
+    width: 463px;
+    height: 36px;
+    border: 2px solid red;
+    font: 14px/36px "微软雅黑";
+    color: #CECECE;
+    border-right: 0; }
+  #header input:nth-of-type(1) {
+    width: 68px;
+    height: 28px;
+    border: 1px solid #CECECE;
+    font: 16px/28px "微软雅黑";
+    color: black;
+    text-align: center;
+    margin-left: 18px;
+    background: white;
+    cursor: pointer; }
+  #header input:last-child {
+    height: 36px;
+    width: 77px;
+    background: red;
+    font: 14px/36px "微软雅黑";
+    color: white;
+    border: 0;
+    margin-left: 0;
+    cursor: pointer; }
+  #header p {
+    position: absolute;
+    width: 70px;
+    height: 18px;
+    font: 11px/18px "微软雅黑";
+    color: #333;
+    background: #eeeeee;
+    left: 711px;
+    top: 47px;
+    text-align: center;
+    cursor: pointer; }
+  #header span {
+    position: absolute;
+    width: 110px;
+    height: 18px;
+    font: 11px/18px "微软雅黑";
+    color: #333;
+    background: #eeeeee;
+    left: 590px;
+    top: 47px;
+    text-align: center;
+    cursor: pointer; }
+  #header p:hover {
+    background: red; }
+  #header span:hover {
+    background: red; }
+  #header .liebiao {
+    position: absolute;
+    width: 293px;
+    height: 40px;
+    left: 946px;
+    top: 38px;
+    font: 14px/40px "微软雅黑";
+    background: white; }
+    #header .liebiao a {
+      margin-left: 20px; }
+    #header .liebiao a:hover {
+      color: red; }
+  #header .liebiao:hover {
+    background: white; }
 
 #nav {
   height: 40px;
   background: orange; }
+  #nav p a {
+    font: 16px/40px "微软雅黑";
+    margin-left: 40px; }
 
 #banner {
   height: 400px;
-  background: blue; }
+  background: url(../img/banner.jpg) no-repeat 0 0; }
 
 #dongyu {
+  position: relative;
   height: 600px;
-  background: pink; }
+  background: pink;
+  padding-top: 36px;
+  box-sizing: border-box; }
+  #dongyu .left {
+    float: left;
+    width: 16%;
+    height: 564px; }
+    #dongyu .left img {
+      position: absolute;
+      left: 40px;
+      top: 36px; }
+  #dongyu .center {
+    float: left;
+    width: 51%;
+    height: 564px; }
+    #dongyu .center div {
+      width: 33%;
+      height: 50%;
+      float: left;
+      background: gray;
+      box-sizing: border-box;
+      border: 1px solid red; }
+  #dongyu .right {
+    float: left;
+    width: 33%;
+    height: 564px; }
+    #dongyu .right div {
+      width: 100%;
+      height: 33.3%;
+      background: gray;
+      box-sizing: border-box;
+      border: 1px solid red; }
 
 #lingquan {
+  padding-top: 53px;
+  box-sizing: border-box;
   height: 153px;
-  background: green; }
+  padding-left: 40px;
+  box-sizing: border-box; }
+  #lingquan div {
+    position: relative;
+    float: left;
+    width: 265px;
+    height: 100px;
+    padding-top: 14px;
+    box-sizing: border-box; }
+    #lingquan div img {
+      position: absolute;
+      left: 22px;
+      top: 26px; }
+    #lingquan div li {
+      margin-left: 130px;
+      font: 12px/24px "微软雅黑";
+      color: #CECECE; }
+    #lingquan div li:first-of-type {
+      margin-left: 130px;
+      font: 14px/24px "微软雅黑";
+      color: #ff6666; }
+    #lingquan div span a {
+      font: 14px/26px "微软雅黑";
+      color: #ff6666;
+      margin-left: 80px; }
+  #lingquan .first {
+    padding-top: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 160px;
+    height: 100px;
+    background: #f54c63; }
+    #lingquan .first p {
+      font: 11px/20px "微软雅黑";
+      color: white; }
+    #lingquan .first p:first-of-type {
+      font: 24px/40px "微软雅黑"; }
 
 #tongcheng {
+  padding-left: 40px;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 25px;
   height: 640px;
   background: blue; }
+  #tongcheng p {
+    margin-left: 20px;
+    font: 24px/50px "微软雅黑"; }
+    #tongcheng p span {
+      font: 14px/50px "微软雅黑";
+      margin-left: 13px; }
+  #tongcheng a {
+    position: absolute;
+    left: 1190px;
+    top: 45px; }
+  #tongcheng .shang {
+    width: 1220px;
+    height: 200px; }
+    #tongcheng .shang div {
+      width: 33%;
+      height: 100%;
+      float: left; }
+  #tongcheng .xia {
+    width: 1220px;
+    height: 360px;
+    background: red; }
+    #tongcheng .xia div {
+      width: 20%;
+      height: 100%;
+      float: left; }
 
 #zhixuan {
+  padding-left: 40px;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 25px;
   height: 780px;
   background: pink; }
+  #zhixuan p {
+    margin-left: 20px;
+    font: 24px/50px "微软雅黑"; }
+  #zhixuan .shang {
+    width: 1200px;
+    height: 430px; }
+    #zhixuan .shang .zuo {
+      float: left;
+      width: 750px;
+      height: 430px;
+      background: red; }
+    #zhixuan .shang .you {
+      float: left;
+      width: 440px;
+      height: 430px;
+      background: blue; }
+  #zhixuan .xia {
+    width: 1200px;
+    height: 240px;
+    background: orange; }
+    #zhixuan .xia .top {
+      width: 1200px;
+      height: 120px;
+      background: green; }
+    #zhixuan .xia .foot {
+      width: 1200px;
+      height: 120px;
+      background: red; }
 
 #pinpai {
   height: 420px;
-  background: green; }
+  background: green;
+  padding-left: 40px;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 25px; }
+  #pinpai p {
+    margin-left: 20px;
+    font: 24px/50px "微软雅黑"; }
+    #pinpai p span {
+      font: 14px/50px "微软雅黑";
+      margin-left: 13px; }
+  #pinpai div {
+    float: left;
+    width: 19%;
+    height: 395px;
+    margin-left: 10px; }
 
 #dianzi {
   height: 645px;
-  background: orange; }
+  background: orange;
+  padding-left: 40px;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 25px; }
+  #dianzi p {
+    position: absolute;
+    margin-left: 20px;
+    font: 24px/50px "微软雅黑"; }
+  #dianzi a {
+    position: absolute;
+    left: 1190px;
+    top: 45px; }
+  #dianzi div {
+    margin-top: 20px;
+    float: left;
+    width: 595px;
+    height: 560px;
+    margin-left: 5px;
+    background: red; }
 
 #shuma {
+  padding-left: 40px;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 25px;
   height: 730px;
   background: blue; }
+  #shuma p {
+    margin-left: 20px;
+    font: 24px/50px "微软雅黑"; }
+    #shuma p span {
+      font: 14px/50px "微软雅黑";
+      margin-left: 13px; }
+  #shuma .left {
+    width: 595px;
+    height: 640px;
+    float: left; }
+    #shuma .left .shang {
+      width: 100%;
+      height: 45px; }
+      #shuma .left .shang span:first-child {
+        margin-right: 430px;
+        font: 20px/45px "微软雅黑";
+        color: white; }
+      #shuma .left .shang span a {
+        font: 14px/45px "微软雅黑";
+        color: white; }
+    #shuma .left .zhong {
+      width: 100%;
+      height: 520px;
+      background: red; }
+    #shuma .left .xia {
+      width: 100%;
+      height: 78px;
+      background: pink; }
+  #shuma .right {
+    width: 595px;
+    height: 640px;
+    float: left;
+    margin-left: 3px; }
+    #shuma .right .shang {
+      width: 100%;
+      height: 45px; }
+      #shuma .right .shang span:first-child {
+        margin-right: 430px;
+        font: 20px/45px "微软雅黑";
+        color: white; }
+      #shuma .right .shang span a {
+        font: 14px/45px "微软雅黑";
+        color: white; }
+    #shuma .right .zhong {
+      width: 100%;
+      height: 520px;
+      background: red; }
+    #shuma .right .xia {
+      width: 100%;
+      height: 78px;
+      background: pink; }
 
 #rexiao {
+  box-sizing: border-box;
+  padding-left: 40px;
   height: 750px;
   background: pink; }
+  #rexiao p {
+    font: 24px/94px "微软雅黑";
+    text-align: center; }
+  #rexiao .big {
+    width: 1200px;
+    height: 645px;
+    background: gray; }
+    #rexiao .big div {
+      width: 19%;
+      height: 47%;
+      margin-left: 2px;
+      margin-top: 2px;
+      background: red;
+      float: left; }
 
 #peifu {
+  padding-left: 40px;
+  padding-top: 70px;
   height: 155px;
-  background: green; }
+  background: #f7f7f7;
+  box-sizing: border-box; }
+  #peifu a {
+    float: left;
+    margin-left: 15px; }
 
 #bottom {
+  position: relative;
   height: 180px;
-  background: orange; }
+  box-sizing: border-box;
+  background: #f7f7f7;
+  padding-top: 20px;
+  padding-left: 40px; }
+  #bottom ul {
+    margin-left: 125px;
+    float: left; }
+    #bottom ul li {
+      font: 12px/25px "微软雅黑";
+      color: #666666; }
+    #bottom ul li:first-of-type {
+      font-weight: bold; }
+  #bottom ul:first-of-type {
+    margin-left: 0; }
+  #bottom ul:nth-of-type(5) {
+    margin-left: 165px; }
+  #bottom ul:nth-of-type(6) {
+    margin-left: 165px; }
+  #bottom img {
+    position: absolute;
+    left: 745px;
+    top: 22px; }
+  #bottom img:last-of-type {
+    position: absolute;
+    left: 985px;
+    top: 22px; }
 
 #footer {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 20px;
+  box-sizing: border-box;
   height: 175px;
-  background: blue; }
+  background: #2d2d2d; }
+  #footer p:first-of-type a {
+    font: 12px/40px "微软雅黑";
+    color: white; }
+  #footer p:first-of-type span {
+    float: right;
+    margin-right: 192px; }
+  #footer .second a {
+    font: 12px/40px "微软雅黑";
+    color: #999999; }
+  #footer p:last-of-type {
+    font: 12px/40px "微软雅黑";
+    color: #999999; }
+    #footer p:last-of-type a {
+      font: 12px/40px "微软雅黑";
+      color: #999999;
+      margin-left: 10px; }
+  #footer img:first-of-type {
+    position: absolute;
+    left: 960px;
+    top: 26px; }
+  #footer img:nth-of-type(2) {
+    position: absolute;
+    left: 1105px;
+    top: 26px; }
+  #footer img:last-of-type {
+    position: absolute;
+    left: 1135px;
+    top: 26px; }
+  #footer .guanggao {
+    position: absolute;
+    width: 40px;
+    height: 18px;
+    left: 1190px;
+    top: 144px;
+    background: #666666; }
+    #footer .guanggao p {
+      font: 14px/18px "微软雅黑";
+      text-align: center; }
 
 /*# sourceMappingURL=shouye.css.map */
