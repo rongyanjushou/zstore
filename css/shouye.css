@@ -38,31 +38,70 @@ a {
 /*头部*/
 #top {
   position: relative;
-  height: 30px; }
-  #top ul li {
+  height: 30px;
+  background: #f5f5f5; }
+  #top .oul li {
     float: left;
     margin-left: 30px; }
-    #top ul li span {
+    #top .oul li span {
       color: blue;
       font: 12px/30px "微软雅黑"; }
-    #top ul li em {
+    #top .oul li em {
       font: 12px/30px "微软雅黑"; }
-    #top ul li a {
+    #top .oul li a {
       font: 12px/30px "微软雅黑"; }
+    #top .oul li span:hover {
+      color: #CC0000; }
+    #top .oul li a:hover {
+      text-decoration: underline;
+      color: #CC0000; }
   #top ul li:nth-of-type(4) {
     margin-left: 310px; }
   #top ul li:nth-of-type(7) {
     margin-right: 30px; }
-  #top img {
+  #top ul li:nth-of-type(5) {
+    position: relative; }
+    #top ul li:nth-of-type(5) .maijia {
+      z-index: 2;
+      display: none;
+      position: absolute; }
+      #top ul li:nth-of-type(5) .maijia li {
+        float: none;
+        margin-left: 0;
+        width: 80px;
+        font: 12px/20px "微软雅黑";
+        cursor: pointer; }
+        #top ul li:nth-of-type(5) .maijia li a {
+          font: 12px/20px "微软雅黑"; }
+  #top .oul li:nth-of-type(5):hover .maijia {
+    display: block;
+    color: #CC0000; }
+  #top .shouji {
     position: absolute;
     left: 985px;
     top: 7px; }
-  #top img:first-child {
+  #top .gang {
+    position: absolute;
     left: 960px;
     top: 10px; }
+  #top .shangcheng {
+    position: absolute;
+    left: 967px;
+    top: 30px;
+    z-index: 2;
+    display: none; }
+  #top .dianhua {
+    position: absolute;
+    left: 1150px;
+    top: 29px;
+    display: none;
+    z-index: 2; }
+  #top ul .list:hover .shangcheng {
+    display: block; }
+  #top ul .list2:hover .dianhua {
+    display: block; }
 
 #header {
-  position: relative;
   padding-left: 190px;
   padding-top: 37px;
   box-sizing: border-box;
@@ -72,7 +111,7 @@ a {
     position: absolute;
     left: 38px;
     top: 32px; }
-  #header input {
+  #header #btn2 {
     margin-left: 70px;
     box-sizing: border-box;
     width: 463px;
@@ -81,17 +120,20 @@ a {
     font: 14px/36px "微软雅黑";
     color: #CECECE;
     border-right: 0; }
-  #header input:nth-of-type(1) {
+  #header em {
+    display: inline-block;
     width: 68px;
     height: 28px;
     border: 1px solid #CECECE;
     font: 16px/28px "微软雅黑";
     color: black;
-    text-align: center;
+    text-align: left;
     margin-left: 18px;
     background: white;
     cursor: pointer; }
-  #header input:last-child {
+    #header em ul li:nth-of-type(4) a:first-of-type {
+      background: red; }
+  #header #btn1 {
     height: 36px;
     width: 77px;
     background: red;
@@ -100,7 +142,7 @@ a {
     border: 0;
     margin-left: 0;
     cursor: pointer; }
-  #header p {
+  #header .sanxing {
     position: absolute;
     width: 70px;
     height: 18px;
@@ -128,11 +170,11 @@ a {
     background: red; }
   #header .liebiao {
     position: absolute;
-    width: 293px;
+    width: 350px;
     height: 40px;
-    left: 946px;
-    top: 38px;
-    font: 14px/40px "微软雅黑";
+    left: 910px;
+    top: 35px;
+    font: 16px/40px "微软雅黑";
     background: white; }
     #header .liebiao a {
       margin-left: 20px; }
@@ -140,23 +182,102 @@ a {
       color: red; }
   #header .liebiao:hover {
     background: white; }
+  #header ul {
+    display: none;
+    background: white;
+    position: absolute;
+    left: 205px; }
+    #header ul a {
+      margin-right: 20px;
+      font: 12px/30px "微软雅黑"; }
+    #header ul a:hover {
+      color: crimson; }
+  #header em:hover ul {
+    display: block;
+    z-index: 2; }
 
 #nav {
   height: 40px;
-  background: orange; }
-  #nav p a {
-    font: 16px/40px "微软雅黑";
-    margin-left: 40px; }
+  padding-left: 40px;
+  box-sizing: border-box; }
+  #nav ul li {
+    float: left; }
+    #nav ul li a {
+      font: 18px/40px "微软雅黑";
+      padding-left: 25px;
+      padding-right: 25px; }
+    #nav ul li a:hover {
+      color: crimson; }
+  #nav ul li:first-of-type {
+    background: red; }
+    #nav ul li:first-of-type a {
+      padding-right: 52px;
+      color: white; }
 
 #banner {
+  position: relative;
+  width: 1260px;
   height: 400px;
-  background: url(../img/banner.jpg) no-repeat 0 0; }
+  overflow: hidden; }
+  #banner .pic {
+    position: absolute;
+    z-index: -1; }
+    #banner .pic ul li {
+      width: 1260px;
+      height: 400px;
+      position: absolute; }
+  #banner .nav {
+    position: absolute;
+    right: 610px;
+    bottom: 20px; }
+    #banner .nav ul li {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #fff;
+      float: left;
+      margin-left: 5px;
+      border-radius: 100%; }
+    #banner .nav ul .select {
+      background: #fff; }
+  #banner #oul {
+    float: left;
+    position: relative;
+    z-index: 2;
+    width: 160px;
+    height: 400px;
+    margin-left: 40px;
+    background: #454545; }
+    #banner #oul li {
+      height: 52px;
+      text-align: center;
+      border-bottom: 1px solid #CECECE; }
+      #banner #oul li a {
+        font: 16px/52px "微软雅黑";
+        color: white; }
+  #banner .shuju {
+    background: white;
+    z-index: 2;
+    float: left;
+    width: 680px;
+    height: 400px; }
+    #banner .shuju .shang {
+      height: 80px;
+      width: 100%; }
+      #banner .shuju .shang span a {
+        font: 14px/30px "微软雅黑";
+        margin-left: 30px; }
+      #banner .shuju .shang a:hover {
+        color: indianred;
+        text-decoration: underline; }
+    #banner .shuju .xia {
+      height: 320px;
+      width: 100%; }
 
 #dongyu {
   position: relative;
   height: 600px;
-  background: pink;
   padding-top: 36px;
+  background: #f7f7f7;
   box-sizing: border-box; }
   #dongyu .left {
     float: left;
@@ -170,30 +291,50 @@ a {
     float: left;
     width: 51%;
     height: 564px; }
-    #dongyu .center div {
+    #dongyu .center .shujuhe {
       width: 33%;
       height: 50%;
       float: left;
-      background: gray;
-      box-sizing: border-box;
-      border: 1px solid red; }
+      background: white;
+      box-sizing: border-box; }
+      #dongyu .center .shujuhe .top {
+        cursor: pointer;
+        width: 100%;
+        height: 180px; }
+        #dongyu .center .shujuhe .top img {
+          width: 100%; }
+      #dongyu .center .shujuhe .ming {
+        font: 12px/30px "微软雅黑";
+        margin-left: 25px; }
+      #dongyu .center .shujuhe .qian {
+        font: 16px/30px "微软雅黑";
+        margin-left: 25px;
+        color: red; }
+      #dongyu .center .shujuhe .time {
+        font: 12px/25px "微软雅黑";
+        margin-left: 25px;
+        color: gray; }
   #dongyu .right {
     float: left;
     width: 33%;
     height: 564px; }
-    #dongyu .right div {
+    #dongyu .right .bottom {
       width: 100%;
       height: 33.3%;
       background: gray;
-      box-sizing: border-box;
-      border: 1px solid red; }
+      box-sizing: border-box; }
+    #dongyu .right img {
+      cursor: pointer;
+      width: 100%;
+      height: 187px; }
 
 #lingquan {
   padding-top: 53px;
   box-sizing: border-box;
   height: 153px;
   padding-left: 40px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background: white; }
   #lingquan div {
     position: relative;
     float: left;
@@ -236,7 +377,7 @@ a {
   position: relative;
   padding-top: 25px;
   height: 640px;
-  background: blue; }
+  background: #f7f7f7; }
   #tongcheng p {
     margin-left: 20px;
     font: 24px/50px "微软雅黑"; }
@@ -250,18 +391,33 @@ a {
   #tongcheng .shang {
     width: 1220px;
     height: 200px; }
-    #tongcheng .shang div {
+    #tongcheng .shang .top {
+      cursor: pointer;
       width: 33%;
       height: 100%;
       float: left; }
   #tongcheng .xia {
     width: 1220px;
-    height: 360px;
-    background: red; }
-    #tongcheng .xia div {
+    height: 360px; }
+    #tongcheng .xia .shujuhe {
       width: 20%;
-      height: 100%;
-      float: left; }
+      height: 340px;
+      float: left;
+      background: white;
+      box-sizing: border-box; }
+      #tongcheng .xia .shujuhe .shang {
+        width: 100%;
+        height: 240px; }
+        #tongcheng .xia .shujuhe .shang img {
+          width: 100%; }
+      #tongcheng .xia .shujuhe .ming {
+        cursor: pointer;
+        font: 12px/30px "微软雅黑";
+        text-align: center; }
+      #tongcheng .xia .shujuhe .qian {
+        font: 16px/30px "微软雅黑";
+        color: red;
+        text-align: center; }
 
 #zhixuan {
   padding-left: 40px;
@@ -269,7 +425,7 @@ a {
   position: relative;
   padding-top: 25px;
   height: 780px;
-  background: pink; }
+  background: #f7f7f7; }
   #zhixuan p {
     margin-left: 20px;
     font: 24px/50px "微软雅黑"; }
@@ -277,31 +433,69 @@ a {
     width: 1200px;
     height: 430px; }
     #zhixuan .shang .zuo {
+      position: relative;
       float: left;
       width: 750px;
       height: 430px;
-      background: red; }
+      background: #f6f9ff; }
+      #zhixuan .shang .zuo ul {
+        float: left; }
+      #zhixuan .shang .zuo .ul1 li {
+        cursor: pointer;
+        width: 101px;
+        height: 45px;
+        background: #ececec;
+        font: 16px/45px "微软雅黑";
+        text-align: center;
+        border-bottom: 1px solid white; }
+      #zhixuan .shang .zuo .ul2 li {
+        cursor: pointer;
+        display: none; }
+      #zhixuan .shang .zuo .ul2 li:first-of-type {
+        display: block; }
+      #zhixuan .shang .zuo div {
+        width: 185px;
+        height: 185px;
+        float: left;
+        margin-left: 2px; }
+        #zhixuan .shang .zuo div .youxi2 {
+          position: absolute;
+          top: 252px;
+          display: none; }
     #zhixuan .shang .you {
+      padding: 25px;
       float: left;
-      width: 440px;
-      height: 430px;
-      background: blue; }
+      width: 390px;
+      height: 380px; }
+      #zhixuan .shang .you div {
+        cursor: pointer;
+        float: left;
+        height: 50%;
+        width: 50%; }
+      #zhixuan .shang .you div:last-of-type {
+        width: 100%;
+        height: 50%; }
+      #zhixuan .shang .you div:hover {
+        transition: all 1s;
+        transform: scale(1.1); }
   #zhixuan .xia {
-    width: 1200px;
-    height: 240px;
-    background: orange; }
+    width: 1190px;
+    height: 240px; }
     #zhixuan .xia .top {
-      width: 1200px;
+      cursor: pointer;
+      width: 1190px;
       height: 120px;
-      background: green; }
+      background: url(../img/zhixuan1.jpg) no-repeat 0 0/cover; }
     #zhixuan .xia .foot {
-      width: 1200px;
+      cursor: pointer;
+      width: 1190px;
       height: 120px;
-      background: red; }
+      background: url(../img/zhixuan2.jpg) no-repeat 0 0/cover; }
 
 #pinpai {
+  margin-bottom: 50px;
   height: 420px;
-  background: green;
+  background: #f7f7f7;
   padding-left: 40px;
   box-sizing: border-box;
   position: relative;
@@ -312,15 +506,33 @@ a {
     #pinpai p span {
       font: 14px/50px "微软雅黑";
       margin-left: 13px; }
-  #pinpai div {
-    float: left;
-    width: 19%;
-    height: 395px;
-    margin-left: 10px; }
+  #pinpai .bigbox {
+    width: 1200px;
+    height: 340px;
+    background: red; }
+    #pinpai .bigbox .shujuhe {
+      width: 20%;
+      height: 340px;
+      float: left;
+      background: white;
+      box-sizing: border-box; }
+      #pinpai .bigbox .shujuhe .shang {
+        width: 100%;
+        height: 240px; }
+        #pinpai .bigbox .shujuhe .shang img {
+          width: 100%; }
+      #pinpai .bigbox .shujuhe .ming {
+        cursor: pointer;
+        font: 12px/30px "微软雅黑";
+        text-align: center; }
+      #pinpai .bigbox .shujuhe .qian {
+        font: 16px/30px "微软雅黑";
+        color: red;
+        text-align: center; }
 
 #dianzi {
   height: 645px;
-  background: orange;
+  background: #f7f7f7;
   padding-left: 40px;
   box-sizing: border-box;
   position: relative;
@@ -333,21 +545,54 @@ a {
     position: absolute;
     left: 1190px;
     top: 45px; }
-  #dianzi div {
-    margin-top: 20px;
+  #dianzi .left {
+    margin-top: 50px;
     float: left;
     width: 595px;
     height: 560px;
     margin-left: 5px;
     background: red; }
+  #dianzi .right {
+    margin-top: 50px;
+    margin-left: 5px;
+    float: left;
+    width: 595px;
+    height: 560px; }
+    #dianzi .right .shujuhe {
+      width: 33%;
+      height: 50%;
+      float: left;
+      background: white;
+      box-sizing: border-box; }
+      #dianzi .right .shujuhe .top {
+        cursor: pointer;
+        width: 100%;
+        height: 180px; }
+        #dianzi .right .shujuhe .top img {
+          width: 100%; }
+      #dianzi .right .shujuhe .ming {
+        position: relative;
+        font: 12px/30px "微软雅黑";
+        margin-left: 25px; }
+      #dianzi .right .shujuhe .qian {
+        position: relative;
+        font: 16px/30px "微软雅黑";
+        margin-left: 25px;
+        color: red; }
+      #dianzi .right .shujuhe .time {
+        position: relative;
+        font: 12px/25px "微软雅黑";
+        margin-left: 25px;
+        color: gray; }
 
 #shuma {
+  margin-top: 50px;
   padding-left: 40px;
   box-sizing: border-box;
   position: relative;
   padding-top: 25px;
   height: 730px;
-  background: blue; }
+  background: #f7f7f7; }
   #shuma p {
     margin-left: 20px;
     font: 24px/50px "微软雅黑"; }
@@ -359,8 +604,11 @@ a {
     height: 640px;
     float: left; }
     #shuma .left .shang {
+      background: #3ccbbc;
       width: 100%;
-      height: 45px; }
+      height: 45px;
+      padding-left: 15px;
+      box-sizing: border-box; }
       #shuma .left .shang span:first-child {
         margin-right: 430px;
         font: 20px/45px "微软雅黑";
@@ -370,18 +618,47 @@ a {
         color: white; }
     #shuma .left .zhong {
       width: 100%;
-      height: 520px;
-      background: red; }
+      height: 520px; }
+      #shuma .left .zhong .shujuhe {
+        width: 33%;
+        height: 50%;
+        float: left;
+        background: white;
+        box-sizing: border-box; }
+        #shuma .left .zhong .shujuhe .top {
+          cursor: pointer;
+          width: 100%;
+          height: 180px; }
+          #shuma .left .zhong .shujuhe .top img {
+            width: 100%; }
+        #shuma .left .zhong .shujuhe .ming {
+          position: relative;
+          font: 12px/20px "微软雅黑";
+          margin-left: 25px; }
+        #shuma .left .zhong .shujuhe .qian {
+          position: relative;
+          font: 16px/20px "微软雅黑";
+          margin-left: 25px;
+          color: red; }
+        #shuma .left .zhong .shujuhe .time {
+          position: relative;
+          font: 12px/20px "微软雅黑";
+          margin-left: 25px;
+          color: gray; }
     #shuma .left .xia {
+      cursor: pointer;
       width: 100%;
       height: 78px;
-      background: pink; }
+      background: url(../img/shumaxia.jpg) no-repeat 0 0; }
   #shuma .right {
     width: 595px;
     height: 640px;
     float: left;
     margin-left: 3px; }
     #shuma .right .shang {
+      padding-left: 15px;
+      box-sizing: border-box;
+      background: #eb9e74;
       width: 100%;
       height: 45px; }
       #shuma .right .shang span:first-child {
@@ -391,20 +668,46 @@ a {
       #shuma .right .shang span a {
         font: 14px/45px "微软雅黑";
         color: white; }
-    #shuma .right .zhong {
+    #shuma .right .middle {
       width: 100%;
-      height: 520px;
-      background: red; }
+      height: 520px; }
+      #shuma .right .middle .shujuhe {
+        width: 33%;
+        height: 50%;
+        float: left;
+        background: white;
+        box-sizing: border-box; }
+        #shuma .right .middle .shujuhe .top {
+          cursor: pointer;
+          width: 100%;
+          height: 180px; }
+          #shuma .right .middle .shujuhe .top img {
+            width: 100%; }
+        #shuma .right .middle .shujuhe .ming {
+          position: relative;
+          font: 12px/20px "微软雅黑";
+          margin-left: 25px; }
+        #shuma .right .middle .shujuhe .qian {
+          position: relative;
+          font: 16px/20px "微软雅黑";
+          margin-left: 25px;
+          color: red; }
+        #shuma .right .middle .shujuhe .time {
+          position: relative;
+          font: 12px/20px "微软雅黑";
+          margin-left: 25px;
+          color: gray; }
     #shuma .right .xia {
+      cursor: pointer;
       width: 100%;
       height: 78px;
-      background: pink; }
+      background: url(../img/shumaxia2.jpg) no-repeat 0 0; }
 
 #rexiao {
   box-sizing: border-box;
   padding-left: 40px;
   height: 750px;
-  background: pink; }
+  background: #f7f7f7; }
   #rexiao p {
     font: 24px/94px "微软雅黑";
     text-align: center; }
@@ -412,13 +715,34 @@ a {
     width: 1200px;
     height: 645px;
     background: gray; }
-    #rexiao .big div {
+    #rexiao .big .shujuhe {
       width: 19%;
       height: 47%;
-      margin-left: 2px;
-      margin-top: 2px;
-      background: red;
-      float: left; }
+      float: left;
+      background: white;
+      box-sizing: border-box;
+      margin-left: 10px;
+      margin-top: 10px; }
+      #rexiao .big .shujuhe .top {
+        cursor: pointer;
+        width: 100%;
+        height: 180px; }
+        #rexiao .big .shujuhe .top img {
+          width: 100%; }
+      #rexiao .big .shujuhe .ming {
+        position: relative;
+        font: 12px/30px "微软雅黑";
+        margin-left: 25px; }
+      #rexiao .big .shujuhe .qian {
+        position: relative;
+        font: 16px/30px "微软雅黑";
+        margin-left: 25px;
+        color: red; }
+      #rexiao .big .shujuhe .time {
+        position: relative;
+        font: 12px/25px "微软雅黑";
+        margin-left: 25px;
+        color: gray; }
 
 #peifu {
   padding-left: 40px;
@@ -428,7 +752,7 @@ a {
   box-sizing: border-box; }
   #peifu a {
     float: left;
-    margin-left: 15px; }
+    margin-left: 18px; }
 
 #bottom {
   position: relative;
@@ -459,6 +783,19 @@ a {
     position: absolute;
     left: 985px;
     top: 22px; }
+  #bottom #chakan {
+    position: absolute;
+    left: 1095px;
+    top: 110px;
+    width: 80px;
+    height: 26px;
+    font: 14px/26px "微软雅黑";
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    background: red; }
 
 #footer {
   position: relative;
