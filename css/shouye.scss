@@ -226,6 +226,9 @@ a{color: black;}/*清除input自带边框*/
     ul{
         li{
             float: left;
+            em{
+                    margin-left: 10px;
+                } 
             a{
                 font:18px/40px "微软雅黑";
                 padding-left: 25px;
@@ -238,7 +241,7 @@ a{color: black;}/*清除input自带边框*/
         li:first-of-type{
             background: red;
             a{
-                padding-right: 52px;
+                padding-right: 37px;
                 color:white;
             }
         }
@@ -272,7 +275,8 @@ a{color: black;}/*清除input自带边框*/
                 border: 1px solid #fff;
                 float: left;
                 margin-left: 5px;
-                border-radius: 100%;   
+                border-radius: 100%; 
+                 
             }
             .select{
                 background: #fff;
@@ -291,9 +295,25 @@ a{color: black;}/*清除input自带边框*/
             height: 52px;
             text-align: center;
             border-bottom: 1px solid #CECECE;
+            span{
+                margin-left: 5px;
+                margin-right: 5px;
+            }  
             a{
                 font:16px/52px "微软雅黑";
                 color: white;
+              
+            }
+        }
+        li:hover{
+                
+            background: white;
+            a{
+                color: black;
+            }
+            a:hover{
+                color: red;
+                text-decoration:underline;
             }
         }
     }
@@ -307,7 +327,7 @@ a{color: black;}/*清除input自带边框*/
             height: 80px;
             width: 100%;
             span a{
-            font: 14px/30px "微软雅黑";
+            font: 14px/50px "微软雅黑";
             margin-left: 30px;
          }
          a:hover{
@@ -343,11 +363,20 @@ a{color: black;}/*清除input自带边框*/
         width: 51%;
         height: 564px;
         .shujuhe{
+            position: relative;
             width: 33%;
             height: 50%;
             float: left;
             background: white;
             box-sizing: border-box;
+            .yinying{
+                position: absolute;
+                top:127px;
+                width: 95%;
+                left:8px;
+                opacity: 0;               
+                transition: all 0.5s;
+            }
             .top{
                 cursor: pointer;
                 width: 100%;
@@ -372,6 +401,9 @@ a{color: black;}/*清除input自带边框*/
                     color: gray;
                 }
         }
+        .shujuhe:hover .yinying{
+                opacity: 1;           
+        }
     }
     .right{
         float: left;
@@ -391,7 +423,6 @@ a{color: black;}/*清除input自带边框*/
         
     }
 }
-
 //dongyu
 #lingquan{
     padding-top: 53px;
@@ -486,7 +517,6 @@ a{color: black;}/*清除input自带边框*/
             background: white;
             box-sizing: border-box;
             .shang{
-                
                 width: 100%;
                 height: 240px;
                 img{
@@ -553,14 +583,15 @@ a{color: black;}/*清除input自带边框*/
                 }
             }
              div{
+                    position: relative;
                     width: 185px;
                     height: 185px;
                     float: left;
                     margin-left: 2px;
                    .youxi2{
                        position: absolute;
-                       top:252px;
-                       display: none;
+                       top:173px;
+                       display:none;
                    }
                 }
              
@@ -625,18 +656,15 @@ a{color: black;}/*清除input自带边框*/
         height:340px;
         background: red;
         .shujuhe{
-           
             width: 20%;
             height: 340px;
             float: left;
             background: white;
             box-sizing: border-box;
             .shang{
-               
                 width: 100%;
                 height: 240px;
                 img{
-                     
                     width: 100%;
                 }
             }
@@ -649,8 +677,11 @@ a{color: black;}/*清除input自带边框*/
                     font:16px/30px "微软雅黑";
                     color: red;
                     text-align: center;
-                    
-                }
+            }
+             img:hover{
+                transition: all 1s;
+                transform: scale(1.06);
+            }
         }
     }
 }
@@ -678,7 +709,82 @@ a{color: black;}/*清除input自带边框*/
         width: 595px;
         height: 560px;
         margin-left: 5px;
-        background: red;
+        .shang{
+            width: 100%;
+            height: 45px;
+            background: #7095ee;
+            h3{
+                float: left;
+                font:18px/45px "微软雅黑";
+                margin-left: 15px;
+                color: white;
+            }
+            ul{
+                float: right;
+                li{
+                    cursor: pointer;
+                    float: left;
+                    margin-top: 12px;
+                    margin-right: 28px;
+                    font-size: 12px;
+                    color: white;
+                }
+                li:nth-of-type(2){
+                    border-bottom: 3px solid white;
+                }
+            }
+        }
+        .zhong{
+            width: 595px;
+            height: 260px;
+            overflow: hidden;
+            position: relative;
+            .imgList{
+                cursor: pointer;
+                width: 1785px;
+                position: absolute;
+                li{
+                    float: left;
+                    img{
+                        width: 595px;
+                        height: 260px;
+                    }
+                }
+            }
+            .navList{
+                position: absolute;
+                bottom: 30px;
+                right: 270px;
+                li{
+                    float: left;
+                    width: 15px;
+                    height: 15px;
+                    margin-left: 10px;
+                    border-radius: 100%;
+                    cursor: pointer;
+                    background: gray;
+                }
+                .select{
+                    background: red;
+                }
+            }
+        }
+        .xia{
+            width: 100%;
+            height: 252px;
+            div{
+                float: left;
+                width: 33.3%;
+                height: 252px;
+                li{
+                    font:14px/30px "微软雅黑";
+                    margin-left: 30px;
+                }
+                .list{
+                    color: red;
+                }
+            }
+        }
     }
     .right{
         margin-top: 50px;
@@ -687,15 +793,14 @@ a{color: black;}/*清除input自带边框*/
         width: 595px;
         height: 560px;
         .shujuhe{
-           
             width: 33%;
             height: 50%;
             float: left;
             background: white;
             box-sizing: border-box;
             .top{
-                 cursor: pointer;
-                width: 100%;
+                cursor: pointer;
+                width:  100%;
                 height: 180px;
                 img{
                     width: 100%;
@@ -881,7 +986,7 @@ a{color: black;}/*清除input自带边框*/
     .big{
         width: 1200px;
         height: 645px;
-        background: gray;
+        background: #f7f7f7;
         .shujuhe{
             
             width: 19%;
@@ -992,31 +1097,80 @@ a{color: black;}/*清除input自带边框*/
     box-sizing: border-box;
     height: 175px;
     background:#2d2d2d;
-    p:first-of-type{
-        a{
-            font:12px/40px "微软雅黑";
-            color: white;
+    .ul1{
+        li{
+            float: left;
+            padding-top: 0;
+            margin-top: 10px;
+            padding-right: 15px;
+            padding-left: 15px;
+            border-right: 1px solid #546654;
+            a{
+                display: block;
+                font:12px/12px "微软雅黑";
+                color: white;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
         }
-        span{
-            float: right;
-            margin-right: 192px;
+        li:first-of-type{
+            margin-left: 0;
+        }
+        li:last-of-type{
+            margin-left: 540px;
+            border: 0;
+        }
+        li:nth-of-type(6){
+            border: 0;
         }
     }
-    .second{
-        a{
-          font:12px/40px "微软雅黑";
-            color: #999999;  
+    .ul2{
+        margin-top: 35px;
+        clear: both;
+        margin-bottom: 35px;
+        li{
+            float: left;
+            margin-top: 20px;
+            padding-right: 15px;
+            padding-left: 15px;
+            border-right: 1px solid #546654;
+            a{
+                display: block;
+                font:12px/12px "微软雅黑";
+                color:#999999;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        li:first-of-type{
+            margin-left: 0;
         }
     }
-    p:last-of-type{
-        font:12px/40px "微软雅黑";
-         color: #999999;
-         a{
-          font:12px/40px "微软雅黑";
-            color: #999999;
-            margin-left: 10px;  
+    .ul3{
+        height: 12px;
+        margin-top: 100px;
+        padding-left: 14px;
+      li{   
+            float: left;
+            span{
+                display: block;
+                font:12px/12px "微软雅黑";
+                color:#999999;
+            }
+            a{
+                display: block;
+                font:12px/12px "微软雅黑";
+                color:#999999;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
         }
-    }
+     } 
     img:first-of-type{
         position: absolute;
         left: 960px;
@@ -1042,7 +1196,37 @@ a{color: black;}/*清除input自带边框*/
         p{
             font:14px/18px "微软雅黑";
             text-align: center;
+            color: white;
         }
     }
 }
 //footer
+#huakuai{
+    position: fixed;
+    right: 0;
+    top:0;
+    height: 800px;
+    width: 37px;
+    background: #2d2d2d;
+    div{
+        cursor: pointer;
+        position: relative;
+        width: 37px;
+        height: 37px;
+        margin-top: 20px;
+        img{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        img:last-child{
+            display: none;
+        }
+    }
+    div:first-of-type{
+        margin-top: 100px;
+    }
+    div:last-of-type{
+        margin-top: 350px;
+    }
+}

@@ -60,7 +60,7 @@
 		<!------------------------header--------------------------->
 		<div id="nav">
 			<ul>
-				<li><a href="">+全部分类</a></li>
+				<li><a href=""><i class="iconfont icon-liebiao"></i><em class="fenlei">全部分类</em></a></li>
 				<li><a href="">首页</a></li>
 				<li><a href="">团购</a></li>
 				<li><a href="">电子竞技</a></li>
@@ -84,12 +84,12 @@
 				</ul>
 			</div>
 			<ul id="oul">
-				<li><a href="">手机&nbsp;></a></li>
-				<li><a href="">电脑&nbsp;></a></li>
-				<li><a href="">DIY&nbsp;></a></li>
-				<li><a href="">数码&nbsp;></a></li>
-				<li><a href="">外设&nbsp;></a></li>
-				<li><a href="">智能&nbsp;></a></li>
+				<li><a href=""><i class="iconfont icon-shouji"></i><span>手机</span>></a></li>
+				<li><a href=""><i class="iconfont icon-diannao"></i><span>电脑</span>></a></li>
+				<li><a href=""><i class="iconfont icon-liebiao"></i><span>DIY</span>></a></li>
+				<li><a href=""><i class="iconfont icon-camera"></i><span>数码</span>></a></li>
+				<li><a href=""><i class="iconfont icon-iconset0267"></i><span>外设</span>></a></li>
+				<li><a href=""><i class="iconfont icon-jiqiren"></i><span>智能</span>></a></li>
 			</ul>
 			<div id="con">
 				
@@ -116,12 +116,11 @@
 			</div>
 			<div class="center">
 				
-				
-				
 			</div>
 			<script id="dongyu1" type="text/html">
 				{{each zong as value}}
 				<div class="shujuhe">
+					<img class="yinying" src="img/yinying.jpg"/>
 					<div class="top">
 						<img src={{value.img}}/>
 					</div>
@@ -135,10 +134,6 @@
 			<div class="right">
 				
 			</div>
-			
-			
-			
-			
 		</div>
 		<!------------------------dongyu--------------------------->
 		<div id="lingquan">
@@ -178,7 +173,6 @@
 			<a href=""><img src="img/gengduo.jpg"/></a>
 			<div class="shang">
 				
-				
 			</div>
 			<script id="tongcheng6" type="text/html">
 				{{each zong as value}}
@@ -187,9 +181,6 @@
 				</div>
 				{{/each}}
 			</script>
-			
-			
-			
 			<div class="xia">
 				
 			</div>
@@ -225,13 +216,10 @@
 						<li><img src="img/chuxing.jpg"/></li>
 						<li><img src="img/meihu.jpg"/></li>
 					</ul>
-					<div class="youxi1"><img  src="img/youxi1.jpg"/>
-					<img class="youxi2" src="img/youxi.jpg"/></div>
-					<div><img src="img/youxi1.jpg"/></div>
-					<div><img src="img/youxi1.jpg"/></div>
-					<div><img src="img/youxi1.jpg"/></div>
-					
-					
+					<div class="youxi1"><img class="youxi2" src="img/youxi.jpg"/><img  src="img/youxi1.jpg"/></div>
+					<div class="youxi1"><img class="youxi2" src="img/youxi.jpg"/><img  src="img/youxi1.jpg"/></div>
+					<div class="youxi1"><img class="youxi2" src="img/youxi.jpg"/><img  src="img/youxi1.jpg"/></div>
+					<div class="youxi1"><img class="youxi2" src="img/youxi.jpg"/><img  src="img/youxi1.jpg"/></div>
 				</div>
 				<div class="you">
 					<div>
@@ -268,9 +256,47 @@
 		<div id="dianzi">
 			<p>电子竞技</p>
 			<a href=""><img src="img/gengduo.jpg"/></a>
-			<div class="left"></div>
+			<div class="left">
+				<div class="shang">
+					<h3>热门</h3>
+					<ul>
+						<li><a href=""></a>电竞主机</li>
+						<li><a href=""></a>电竞外设</li>
+						<li><a href=""></a>游戏本</li>
+					</ul>
+				</div>
+				<div class="zhong">
+					<ul class="imgList">
+						<li class="list1"><img src="img/remen1.jpg"/></li>
+						<li><img src="img/remen2.jpg"/></li>
+					</ul>
+					<ul class="navList">
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="xia">
+					<div><img src="img/remen11.jpg"/>
+					<ul>
+						<li>Beats无线耳机</li>
+						<li class="list">¥1788.00</li>
+					</ul>
+					</div>
+					<div><img src="img/remen22.jpg"/>
+					<ul>
+						<li>大号鼠标垫限时抢</li>
+						<li class="list">¥9.00</li>
+					</ul>
+					</div>
+					<div><img src="img/remen33.jpg"/>
+					<ul>
+						<li>AOC 23.6英寸电竞游戏曲</li>
+						<li class="list">¥869.00</li>
+					</ul>
+					</div>
+				</div>
+			</div>
 			<div class="right">
-				
 			</div>
 			<script id="dianzi2" type="text/html">
 				{{each zong as value}}
@@ -284,8 +310,6 @@
 				</div>
 				{{/each}}
 			</script>
-			
-			
 		</div>
 		<!--------------------------dianzi------------------------->
 		<div id="shuma">
@@ -310,8 +334,6 @@
 					
 				</div>
 			</div>
-			
-			
 		</div>
 		<!--------------------------shuma-------------------------->
 		<div id="rexiao">
@@ -381,17 +403,27 @@
 		</div>
 		<!---------------------------bottom------------------------>
 		<div id="footer">
-			<p><a href="">中关村在线</a>
-			<a href="">&nbsp;&nbsp;|&nbsp;&nbsp;Z商城</a>
-			<a href="">&nbsp;&nbsp;|&nbsp;&nbsp;团购</a>
-			<a href="">&nbsp;&nbsp;|&nbsp;&nbsp;产品报价</a>
-			<a href="">&nbsp;&nbsp;|&nbsp;&nbsp;论坛</a>
-			<a href="">&nbsp;&nbsp;|&nbsp;&nbsp;问答</a>
-			<span><a href="">关注新浪微博</a></span></p>
-			<p class="second"><a href="">关于Z商城</a>
-			<a href="">&nbsp;&nbsp;|&nbsp;&nbsp;帮助中心</a>
-			<a href="">&nbsp;&nbsp;|&nbsp;&nbsp;联系我们</a></p>
-			<p>©2017 中关村在线 版权所有. 京ICP证150096号京ICP备14061128号<a href="">京公网安备11010802020026号</a><a href="">网络文化经营许可证京网文[2016]1631-199</a></p>
+			<ul class="ul1">
+				<li><a href="">中关村在线</a></li>
+				<li><a href="">Z商城</a></li>
+				<li><a href="">团购</a></li>
+				<li><a href="">产品报价</a></li>
+				<li><a href="">论坛</a></li>
+				<li><a href="">问答</a></li>
+				<li><a href="">关注新浪微博</a></li>
+			</ul>
+			<ul class="ul2">
+				<li><a href="">关于Z商城</a></li>
+				<li><a href="">帮助中心</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+			<ul class="ul3">
+				<li><span>©2017 中关村在线 版权所有.</span></li>
+				<li><a href="">京ICP证150096号</a></li>
+				<li><span>京ICP备14061128号</span></li>
+				<li><a href="">京公网安备11010802020026号</a></li>
+				<li><a href="">网络文化经营许可证京网文[2016]1631-199</a></li>
+			</ul>
 			<img src="img/xinl.jpg"/>
 			<img src="img/weix.jpg"/>
 			<img src="img/erweima.jpg"/>
@@ -400,5 +432,12 @@
 			</div>
 		</div>
 		<!---------------------------footer------------------------>
+		<div id="huakuai">
+			<div><img src="img/huakuai1.png"/><img src="img/huakuai11.png"/></div>
+			<div><img src="img/huakuai2.png"/><img src="img/huakuai22.png"/></div>
+			<div><img src="img/huakuai3.png"/><img src="img/huakuai33.png"/></div>
+			<div><img src="img/huakuai4.png"/><img src="img/huakuai44.png"/></div>
+			<div class="shangqu"><img src="img/huakuai5.png"/><img src="img/huakuai55.png"/></div>
+		</div>
 	</body>
 </html>

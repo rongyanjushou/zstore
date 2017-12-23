@@ -9,11 +9,25 @@ $(function(){
 	})
 	
 	$("#zhixuan .youxi1").hover(function(){
-		$("#zhixuan .youxi2").slideToggle();
+		$(this).children().eq(0).show().animate({"top":0},500);
+	},function(){
+		$(this).children().eq(0).hide().animate({"top":173},10);
 	})
 	
+	console.log($("#huakuai div"))
 	
 	
+	$("#huakuai div:not(:last)").hover(function(){
+		$(this).children().eq(0).hide();
+		$(this).children().eq(1).show().animate({"left":-65},500);
+	},function(){
+		$(this).children().eq(0).show();
+		$(this).children().eq(1).hide().animate({"left":0},10);
+	})
+	
+	$("#huakuai .shangqu").click(function(){
+		$("html,body").animate({"scrollTop":0},0)
+	})
 	
 	
 	
