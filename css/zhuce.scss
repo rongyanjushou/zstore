@@ -8,7 +8,7 @@ i,em{font-style: normal;}
 b,strong{font-weight:normal;}
 body{font-family:"微软雅黑";}
 input,a{outline:none;}/*清除input自带边框*/  
-#header,#nav,#section,#footer{
+#header,#nav,#section{
     width: 980px;
     margin: 0 auto;
 }
@@ -18,19 +18,33 @@ input,a{outline:none;}/*清除input自带边框*/
 }
 #header a{
     float: left;
+    color: firebrick;
 }
 #header p{
     float: left;
-    font:14px/90px "微软雅黑";
+    font:14px/14px "微软雅黑";
     margin-left: 480px;
+    margin-top: 31px;
     span{
         float: left;
     }
 }
 #header span:last-child{
+    height: 14px;
     color:#cc0000;
 }
-#nav{
+#header span:hover a{
+    display: block;
+    color: white;
+    background: firebrick;
+}
+
+#section{
+    position: relative;
+    margin-bottom: 50px;
+    border: 1px solid #CECECE;
+    height: 810px;
+    .nav{
     height: 60px;
     background:#fafafa;
     p{
@@ -38,11 +52,26 @@ input,a{outline:none;}/*清除input自带边框*/
         text-indent: 90px;
     }
 }
-
-#section{
-    height: 750px;
 }
 #section .left{
+    .yanshouji{
+        position: absolute;
+        left:465px;
+        top:145px;
+        display: none;
+    }
+    .yanmima{
+        position: absolute;
+        left:465px;
+        top:388px;
+        display: none;
+    }
+    .yanmima2{
+        position: absolute;
+        left:465px;
+        top:465px;
+        display: none;
+    }
     float: left;
     width: 60%;
     height: 750px;
@@ -50,6 +79,9 @@ input,a{outline:none;}/*清除input自带边框*/
     padding-left: 85px;
     padding-top: 30px;
     box-sizing: border-box;
+    .mima{
+        margin-right: 16px;
+    }
     em{
         margin-left: 125px;
         font:14px/38px "微软雅黑";
@@ -89,13 +121,17 @@ input,a{outline:none;}/*清除input自带边框*/
         margin-bottom: 25px;
     }
     #rad{
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
         margin: 0;
         margin-left: 83px;
     }
    .foot{
         font:10px/10px "微软雅黑";
+        a:hover{
+            color: darkred;
+            text-decoration: underline;
+        }
     }
     #btn{
         width: 290px;
@@ -120,22 +156,50 @@ input,a{outline:none;}/*清除input自带边框*/
     p{
         font:12px/30px "微软雅黑";
     }
+    a:hover{
+        color: indianred;
+        text-decoration: underline;
+    }
     img{
+        cursor: pointer;
         margin-top: 20px;
     }
 }
 #footer{
-    height: 55px;
-    background: white;
-    padding-top: 15px;
-    box-sizing: border-box;
-    a{
-       float: left;
-       font:14px/16px "微软雅黑";
-       color: black;
-    }
-    span{
-        font:14px/16px "微软雅黑";
-        float: right;
+    width: 1260px;
+    height: 56px;
+    margin:0 auto;
+    border-top: 1px solid #CECECE;
+    ul{
+        margin-top: 18px;
+        li{
+            float: left;
+            border-right: 1px solid #CECECE;
+            a{
+                color: black;
+                font:12px/12px "微软雅黑";
+                display: block;
+                margin-right: 12px;
+                margin-left: 12px;
+            }
+            a:hover{
+                color: indianred;
+                text-decoration: underline;
+            }
+            span{
+                 display: block;
+                 font:12px/12px "微软雅黑";
+            }
+        }
+        li:first-of-type{
+            margin-left: 125px;
+        }
+        li:nth-of-type(3){
+            border: none;
+            margin-right: 620px;
+        }
+        li:last-of-type{
+            border: none;
+        }
     }
 }

@@ -28,7 +28,7 @@ input, a {
   outline: none; }
 
 /*清除input自带边框*/
-#header, #nav, #section, #footer {
+#header, #nav, #section {
   width: 980px;
   margin: 0 auto; }
 
@@ -37,27 +37,37 @@ input, a {
   background: url(../img/zhucelogo.jpg) no-repeat 0 0; }
 
 #header a {
-  float: left; }
+  float: left;
+  color: firebrick; }
 
 #header p {
   float: left;
-  font: 14px/90px "微软雅黑";
-  margin-left: 480px; }
+  font: 14px/14px "微软雅黑";
+  margin-left: 480px;
+  margin-top: 31px; }
   #header p span {
     float: left; }
 
 #header span:last-child {
+  height: 14px;
   color: #cc0000; }
 
-#nav {
-  height: 60px;
-  background: #fafafa; }
-  #nav p {
-    font: 18px/60px "微软雅黑";
-    text-indent: 90px; }
+#header span:hover a {
+  display: block;
+  color: white;
+  background: firebrick; }
 
 #section {
-  height: 750px; }
+  position: relative;
+  margin-bottom: 50px;
+  border: 1px solid #CECECE;
+  height: 810px; }
+  #section .nav {
+    height: 60px;
+    background: #fafafa; }
+    #section .nav p {
+      font: 18px/60px "微软雅黑";
+      text-indent: 90px; }
 
 #section .left {
   float: left;
@@ -67,6 +77,23 @@ input, a {
   padding-left: 85px;
   padding-top: 30px;
   box-sizing: border-box; }
+  #section .left .yanshouji {
+    position: absolute;
+    left: 465px;
+    top: 145px;
+    display: none; }
+  #section .left .yanmima {
+    position: absolute;
+    left: 465px;
+    top: 388px;
+    display: none; }
+  #section .left .yanmima2 {
+    position: absolute;
+    left: 465px;
+    top: 465px;
+    display: none; }
+  #section .left .mima {
+    margin-right: 16px; }
   #section .left em {
     margin-left: 125px;
     font: 14px/38px "微软雅黑";
@@ -97,12 +124,15 @@ input, a {
   #section .left .last {
     margin-bottom: 25px; }
   #section .left #rad {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     margin: 0;
     margin-left: 83px; }
   #section .left .foot {
     font: 10px/10px "微软雅黑"; }
+    #section .left .foot a:hover {
+      color: darkred;
+      text-decoration: underline; }
   #section .left #btn {
     width: 290px;
     height: 40px;
@@ -124,20 +154,41 @@ input, a {
   box-sizing: border-box; }
   #section .right p {
     font: 12px/30px "微软雅黑"; }
+  #section .right a:hover {
+    color: indianred;
+    text-decoration: underline; }
   #section .right img {
+    cursor: pointer;
     margin-top: 20px; }
 
 #footer {
-  height: 55px;
-  background: white;
-  padding-top: 15px;
-  box-sizing: border-box; }
-  #footer a {
-    float: left;
-    font: 14px/16px "微软雅黑";
-    color: black; }
-  #footer span {
-    font: 14px/16px "微软雅黑";
-    float: right; }
+  width: 1260px;
+  height: 56px;
+  margin: 0 auto;
+  border-top: 1px solid #CECECE; }
+  #footer ul {
+    margin-top: 18px; }
+    #footer ul li {
+      float: left;
+      border-right: 1px solid #CECECE; }
+      #footer ul li a {
+        color: black;
+        font: 12px/12px "微软雅黑";
+        display: block;
+        margin-right: 12px;
+        margin-left: 12px; }
+      #footer ul li a:hover {
+        color: indianred;
+        text-decoration: underline; }
+      #footer ul li span {
+        display: block;
+        font: 12px/12px "微软雅黑"; }
+    #footer ul li:first-of-type {
+      margin-left: 125px; }
+    #footer ul li:nth-of-type(3) {
+      border: none;
+      margin-right: 620px; }
+    #footer ul li:last-of-type {
+      border: none; }
 
 /*# sourceMappingURL=zhuce.css.map */

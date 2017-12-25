@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="common.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		用户名：<input type="text" id="username"> <br>
+		密码：<input type="password" id="psw"><br>
+		<input type="checkbox" id="ck" checked="checked">一周内免登录<br>
+		<input type="button" id="btn" value="登录">
+		<script type="text/javascript">
+			var aInput = document.getElementsByTagName("input");
+			
+			if(getCookie("username")){
+				aInput[0].value = getCookie("username");
+				aInput[1].value = getCookie("psw");
+			}
+			
+			
+			aInput[3].onclick = function(){
+				var username = aInput[0].value;
+				var password = aInput[1].value;
+				if(aInput[2].checked){
+					setCookie("username",username,7);
+					setCookie("psw",password,7);
+				}
+			}
+			
+			
+			
+		</script>
+	</body>
+</html>

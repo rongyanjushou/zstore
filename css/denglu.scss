@@ -10,29 +10,37 @@ body{font-family:"微软雅黑";}
 input,a{outline:none;}/*清除input自带边框*/  
 
 #header{
-    width: 980px;
+     width: 980px;
     margin: 0 auto;
     height: 100px;
     background: url(../img/zhucelogo.jpg) no-repeat 0 0;
 }
 #header a{
     float: left;
+    color: firebrick;
 }
 #header p{
     float: left;
-    font:14px/90px "微软雅黑";
+    font:14px/14px "微软雅黑";
     margin-left: 480px;
+    margin-top: 31px;
     span{
         float: left;
     }
 }
 #header span:last-child{
+    height: 14px;
     color:#cc0000;
+}
+#header span:hover a{
+    display: block;
+    color: white;
+    background: firebrick;
 }
 #section{
     width: 1000px;
     height: 350px;
-    margin: 50px auto;
+    margin: 50px auto 130px auto;
     .left{
          float: left;
          width: 50%;
@@ -48,7 +56,7 @@ input,a{outline:none;}/*清除input自带边框*/
         h3{
            font:20px/40px "微软雅黑";
            text-align: center;
-           margin-left: 85px;
+           margin-left: 75px;
            width: 140px;
            border-bottom: 2px solid #CC0000; 
         }
@@ -94,33 +102,41 @@ input,a{outline:none;}/*清除input自带边框*/
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #footer{
-    width: 980px;
-    margin: 0 auto;
-    height: 55px;
-    background: white;
-    padding-top: 15px;
-    box-sizing: border-box;
-    a{
-       float: left;
-       font:14px/16px "微软雅黑";
-       color: black;
-    }
-    span{
-        font:14px/16px "微软雅黑";
-        float: right;
+    width: 1260px;
+    height: 56px;
+    margin:0 auto;
+    border-top: 1px solid #CECECE;
+    ul{
+        margin-top: 18px;
+        li{
+            float: left;
+            border-right: 1px solid #CECECE;
+            a{
+                color: black;
+                font:12px/12px "微软雅黑";
+                display: block;
+                margin-right: 12px;
+                margin-left: 12px;
+            }
+            a:hover{
+                color: indianred;
+                text-decoration: underline;
+            }
+            span{
+                 display: block;
+                 font:12px/12px "微软雅黑";
+            }
+        }
+        li:first-of-type{
+            margin-left: 125px;
+        }
+        li:nth-of-type(3){
+            border: none;
+            margin-right: 620px;
+        }
+        li:last-of-type{
+            border: none;
+        }
     }
 }
