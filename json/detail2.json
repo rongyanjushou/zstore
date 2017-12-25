@@ -1,0 +1,16 @@
+{
+	"1001":{
+		"id":"1001",
+		"name":"三星",
+		"price":"¥258.00",
+		"store":"三味腾达专营店",
+		"imgsrc":"img/liebiao01.jpg"
+	},
+	"1002":{
+		"id":"1002",
+		"name":"暴风魔镜",
+		"price":"¥199.00",
+		"store":"正德科技电信专营店",
+		"imgsrc":"img/liebiao02.jpg"
+	}
+}

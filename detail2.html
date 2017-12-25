@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*#detailbox{
+				width: 100px;
+				height: 100px;
+				background: red;
+				margin-left: 100px;
+			}*/
+		</style>
+	</head>
+	<body>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/detail2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<div id="detailbox">
+			
+		</div>
+		<script id="detail2" type="text/html">
+			<div id="imgZoom"><img src="{{imgsrc}}"></div>
+			<div id="attrshow">
+				<p>{{title}}</p>
+				<p>{{price}}</p>
+				<p><input id="btn" type="button" value="加入购物车" data-id={{id}}></p>
+			</div>
+		</script>
+		
+	</body>
+</html>

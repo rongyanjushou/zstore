@@ -7,7 +7,6 @@ $(function(){
 		li2.eq(index).show().siblings().hide();
 		$(this).css({"background":"red","color":"white"}).siblings().css({"background":"#ececec","color":"black"});
 	})
-	
 	$("#zhixuan .youxi1").hover(function(){
 		$(this).children().eq(0).show().animate({"top":0},500);
 	},function(){
