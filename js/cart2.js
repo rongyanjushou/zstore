@@ -32,9 +32,92 @@ $(function(){
 		}
 			var html = "";
 		for(var i in obj){
-				html +='<li data-id="'+i+'"><img src="'+data[i].imgsrc+'"><span>'+data[i].name+'</span><span>'+data[i].price+'</span><span><em class="minus">-</em><input type="text" class="num" value="'+obj[i]+'"><em class="add">+</em></span><span class="del">删除</span></li>';
+				html +='<li id="gouwu" data-id="'+i+'"><img src="'+data[i].imgsrc+'"><span>'+data[i].name+'</span><span>'+data[i].price+'</span><span><em class="minus">-</em><input type="text" class="num" value="'+obj[i]+'"><em class="add">+</em></span><span class="del">删除</span></li>';
 			}
 		$("#cartbox")[0].innerHTML=html;
+		
+		
+		var aJian = document.getElementsByClassName("minus");
+		var aJia = document.getElementsByClassName("add");
+		var aNum = document.getElementsByClassName("num");
+		var aDel = document.getElementsByClassName("del");
+		var aLi = $("#cartbox")[0].children;
+		var oZongjia = document.getElementById("zongjia");
+		var oCart = $("#cartbox")[0];
+			
+			for(var i = 0; i < aJian.length; i++){
+				aJian[i].onclick = function(){
+					
+					var oInput = this.nextElementSibling || this.nextSibling;
+					//console.log(oInput);
+					oInput.value--;
+					
+					var id = this.parentNode.parentNode.getAttribute("data-id");
+					//console.log(id);
+					
+					obj[id] = parseInt(oInput.value);
+					jszj();
+					var str = JSON.stringify(obj);
+					
+					setCookie("cart",str,7);
+					
+				}
+				
+				aJia[i].onclick = function(){
+					
+					var oInput = this.previousElementSibling || this.previousSibling;
+					//console.log(oInput);
+					oInput.value++;
+					
+					var id = this.parentNode.parentNode.getAttribute("data-id");
+					//console.log(id);
+					
+					obj[id] = parseInt(oInput.value);
+					jszj();
+					var str = JSON.stringify(obj);
+					
+					setCookie("cart",str,7);
+					
+				}
+				
+				aNum[i].onchange = function(){
+					
+					var id = this.parentNode.parentNode.getAttribute("data-id");
+					obj[id] = parseInt(this.value);
+					jszj();
+					
+					var str = JSON.stringify(obj);
+					setCookie("cart",str,7);
+					
+				}
+				
+				aDel[i].onclick = function(){
+					
+					var id = this.parentNode.getAttribute("data-id");
+					console.log(this.parentNode);
+					oCart.removeChild(this.parentNode);
+					delete obj[id];
+					jszj();
+					var str = JSON.stringify(obj);
+					setCookie("cart",str,7);
+					
+				}				
+			}
+			
+			function jszj(){
+				var totalPrice = 0;
+				for(var i in obj){
+					var price = data[i].price.replace("￥","");
+					totalPrice += obj[i]*price;
+					console.log(obj,price);
+				}
+				
+				oZongjia.innerHTML = totalPrice;
+			}
+			
+			
+			jszj();
+		
 		
 	}
 	

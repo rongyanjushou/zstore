@@ -3,31 +3,113 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<style type="text/css">
-			/*#detailbox{
-				width: 100px;
-				height: 100px;
-				background: red;
-				margin-left: 100px;
-			}*/
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/detail2.css"/>
+		<link rel="stylesheet" href="font/iconfont.css" />
 	</head>
 	<body>
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/detail2.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-		<div id="detailbox">
+		<div id="top">
+			<img class="gang" src="img/gang.jpg"/>
+			<img class="shouji" src="img/shouji.jpg"/>
+			<ul class="oul">
+				<li><a href="">商城首页</a></li>
+				<li><em>Hi~欢迎来到Z商城，请</em><a href=""><span>登录</span></a></li>
+				<li><a href=""><span>免费注册</span></a></li>
+				<li><a href="">我的订单</a></li>
+				<li><a href="">买家中心∨</a>
+					<ul class="maijia">
+						<li><a href="">关注的店铺</a></li>
+						<li><a href="">关注的商品</a></li>
+					</ul>
+				</li>
+				<li><a href="">购物车<span>0</span>件</a></li>
+				<li><a href="">帮助中心</a></li>
+				<li class="list"><a href="">手机商城∨</a><img class="shangcheng" src="img/shangcheng.png"/></li>
+				<li><a href="">中关村在线</a></li>
+				<li class="list2"><a href="">联系客服∨</a><img class="dianhua" src="img/dianhua.png"/></li>
+			</ul>
+		</div>
+		<!-------------------------top----------------------------->
+		<div id="header">
+			<p class="liebiao"><a href=""><i class="iconfont icon-dingdan">&nbsp;我的订单</i></a>
+			<a href=""><i class="iconfont icon-youhuiquan">&nbsp;我的优惠券</i></a>
+			<a href=""><i class="iconfont icon-gouwuchekong">&nbsp;购物车</i></a></p>
+			<p class="sanxing">三星Note8</p>
+			<span>年终盛典，钜惠狂欢</span>
+			<a href=""><img src="img/shouyelogo.jpg"/></a>
+			<em>&nbsp;&nbsp;上海∨<ul>
+				<li><a href="">北京</a><a href="">成都</a><a href="">青岛</a></li>
+				<li><a href="">西安</a><a href="">郑州</a></li>
+				<li><a href="">石家庄</a><a href="">平顶山</a></li>
+				<li><a href="">上海</a><a href="">德阳</a><a href="">邯郸</a></li>
+				<li><a href="">邢台</a><a href="">秦皇岛</a></li>
+				<li><a href="">衡水</a><a href="">沧州</a><a href="">承德</a></li>
+				<li><a href="">唐山</a><a href="">开封</a></li>
+				<li><a href="">驻马店</a><a href="">安阳</a></li>
+				<li><a href="">新乡</a><a href="">廊坊</a><a href="">保定</a></li>
+				<li><a href="">全国</a></li>
+			</ul>
+			</em>
+			<input type="text" name="" id="btn2" placeholder="&nbsp;&nbsp;&nbsp;找找您想要的商品" /><input type="button" name="" id="btn1" value="搜索" />
 			
 		</div>
+		<!------------------------header--------------------------->
+		<div id="nav">
+			<ul>
+				<li><a href=""><i class="iconfont icon-liebiao"></i><em class="fenlei">全部分类</em></a></li>
+				<li><a href="">首页</a></li>
+				<li><a href="">团购</a></li>
+				<li><a href="">电子竞技</a></li>
+			</ul>
+		</div>
+		<!-------------------------nav----------------------------->
+		<div id="fenlei">
+			<p><a href="">首页</a>
+			<a href="">VR眼镜</a>
+			<a href="cart2.html">暴风魔镜</a></p>
+		</div>
+		<div id="section">
+			<div class="zuo">
+				<div id="detailbox"></div>
+				<div class="xia"><img src="img/xiaotu.jpg"/>
+				<p><a href="">关注商品</a><a href="">分享</a></p>
+				</div>
+			</div>
+			<div class="zhong">
+				<div class="shang">
+					
+					<p>配       送: <span>河南</span> 可送达支持满399快递包邮去凑单</p>
+					<p>服务保障：
+由 <span>正德科技电信专营店</span> 发货并承诺提供以下服务保障</p>
+					<p>商品颜色：
+黑色Android版 黑色ios版</p>
+					<p>套       装：
+	<span>官方标配</span></p>
+					<p>官方标配</p>
+				</div>
+				<div class="xia"></div>
+			</div>
+			<div class="you">123</div>
+		</div>
+		
+		<!-------------------------detailbox----------------------------->
 		<script id="detail2" type="text/html">
-			<div id="imgZoom"><img src="{{imgsrc}}"></div>
+			<div id="imgZoom"><div class="zoom"></div><img src="{{imgsrc}}">
+			</div>
+			<div id="bigZoom"><img src="{{imgsrc}}"></div>
 			<div id="attrshow">
-				<p>{{title}}</p>
+				<p>{{name}}</p>
 				<p>{{price}}</p>
-				<p><input id="btn" type="button" value="加入购物车" data-id={{id}}></p>
+			</div>
+			<div id="btnshow">
+				<p><em>购买数量:</em><span class="minus">-</span><input type="text" id="snum" value="1"><span class="add">+</span><em>件</em></p>
+				<p><input type="button" name="btn1" id="btn1" value="立即购买" /><input id="btn" type="button" value="加入购物车" data-id={{id}}></p>
+				
 			</div>
 		</script>
-		
+			<!-------------------------detailbox----------------------------->
 	</body>
 </html>

@@ -1,34 +1,15 @@
 $(function(){
 	
-	var shouji = getCookie("shouji");
-	var mima = getCookie("mima");
-	console.log(shouji,mima);
 	$("#btn").click(function(){
-	if($("#shouji").val()==shouji){
-	if($("#mima").val()==mima){
-		window.location.assign("shouye.html");
+		$.getJSON("http://datainfo.duapp.com/shopdata/userinfo.php",{status:"login",userID:$("#shouji").val(),password:$("#mima").val()},function(data){
+			if(data==0){
+				confirm("用户名不存在");
+			}else if(data==2){
+				confirm("用户名密码不符");
+			}else{
+				window.location.replace("shouye.html");
 			}
-		}
+		})
 	})
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 })

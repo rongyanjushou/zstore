@@ -1,7 +1,4 @@
 $(function(){
-	var shouji = getCookie("shouji");
-	var mima = getCookie("mima");
-	console.log(shouji,mima);
 	
 	$("input").focus(function(){
 		$(this).css({"border-color":"red"});
@@ -13,7 +10,6 @@ $(function(){
 	$("#shouji").change(function(){
 				var str =$("#shouji").val();
 				var jiance = /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
-				
 				var flag = jiance.test(str);
 					if(flag==false){
 						$("#section .yanshouji").show();
@@ -43,10 +39,19 @@ $(function(){
 	})
 	
 	$("#btn").click(function(){
-		setCookie("shouji",$("#shouji").val(),30);
-		setCookie("mima",$("#mima").val(),30);
-		
+			$.getJSON("http://datainfo.duapp.com/shopdata/userinfo.php",{status:"register",userID:$("#shouji").val(),password:$("#mima").val()},function(data){
+				if(data==1){
+					window.location.replace("denglu.html");
+				}
+				if(data==0){
+					confirm("重名");
+				}
+				if(data==2){
+					confirm("注册失败");
+				}
+			})
 	})
+	
 	
 	
 	
