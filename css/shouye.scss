@@ -419,7 +419,12 @@ a{color: black;}/*清除input自带边框*/
             cursor: pointer;
             width: 100%;
             height: 187px;
+            opacity: 1;
+             transition: all 0.5s;
             }
+        img:hover{
+            opacity: 0.5;
+        }
         
     }
 }
@@ -510,7 +515,6 @@ a{color: black;}/*清除input自带边框*/
         width: 1220px;
         height: 360px;
        .shujuhe{
-          
             width: 20%;
             height: 340px;
             float: left;
@@ -522,9 +526,14 @@ a{color: black;}/*清除input自带边框*/
                 img{
                     width: 100%;
                 }
+                img:hover{
+                transition: all 1s;
+                transform: scale(1.06);
+            }
             }
              .ming{
-                     cursor: pointer;
+                    margin-top: 12px;
+                   cursor: pointer;
                     font:12px/30px "微软雅黑";
                     text-align: center;
                    
@@ -975,10 +984,29 @@ a{color: black;}/*清除input自带边框*/
 }
 //shuma
 #rexiao{
+    position: relative;
     box-sizing: border-box;
     padding-left: 40px;
     height: 750px;
     background: #f7f7f7;
+    .dian{
+        position: absolute;
+        display: inline-block;
+        width: 550px;
+        height: 1px;
+        border-bottom: 2px dashed #d8d8d8;
+        top:43px;
+        left: 40px;
+    }
+    .youdian{
+        position: absolute;
+        display: inline-block;
+        width: 550px;
+        height: 1px;
+        border-bottom: 2px dashed #d8d8d8;
+        top:43px;
+        left: 708px;
+    }
     p{
         font:24px/94px "微软雅黑";
         text-align: center;

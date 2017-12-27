@@ -348,7 +348,11 @@ a {
     #dongyu .right img {
       cursor: pointer;
       width: 100%;
-      height: 187px; }
+      height: 187px;
+      opacity: 1;
+      transition: all 0.5s; }
+    #dongyu .right img:hover {
+      opacity: 0.5; }
 
 #lingquan {
   padding-top: 53px;
@@ -432,7 +436,11 @@ a {
         height: 240px; }
         #tongcheng .xia .shujuhe .shang img {
           width: 100%; }
+        #tongcheng .xia .shujuhe .shang img:hover {
+          transition: all 1s;
+          transform: scale(1.06); }
       #tongcheng .xia .shujuhe .ming {
+        margin-top: 12px;
         cursor: pointer;
         font: 12px/30px "微软雅黑";
         text-align: center; }
@@ -789,10 +797,27 @@ a {
       background: url(../img/shumaxia2.jpg) no-repeat 0 0; }
 
 #rexiao {
+  position: relative;
   box-sizing: border-box;
   padding-left: 40px;
   height: 750px;
   background: #f7f7f7; }
+  #rexiao .dian {
+    position: absolute;
+    display: inline-block;
+    width: 550px;
+    height: 1px;
+    border-bottom: 2px dashed #d8d8d8;
+    top: 43px;
+    left: 40px; }
+  #rexiao .youdian {
+    position: absolute;
+    display: inline-block;
+    width: 550px;
+    height: 1px;
+    border-bottom: 2px dashed #d8d8d8;
+    top: 43px;
+    left: 708px; }
   #rexiao p {
     font: 24px/94px "微软雅黑";
     text-align: center; }

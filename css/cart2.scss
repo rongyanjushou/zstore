@@ -186,7 +186,6 @@ a{color: black;}/*清除input自带边框*/
     }
 }
 #gouwu{
-    
     width: 960px;
     height: 150px;
     margin: 0 auto;
@@ -246,6 +245,34 @@ a{color: black;}/*清除input自带边框*/
     padding: 12px;
     box-sizing: border-box;
 }
+#xihuan{
+    width: 960px;
+    height: 242px;
+    margin: 0 auto;
+    h2{
+        width: 130px;
+        height: 35px;
+        font:14px/35px "微软雅黑";
+        text-align: center;
+        border-top: 2px solid red;
+        
+    }
+    img{
+    cursor: pointer;
+    width: 150px;
+    height: 170px;
+    float: left;
+    margin-left: 30px;
+}
+}
+
+
+
+
+
+
+
+
 #footer{
     border-top: 1px solid #CECECE;
     height: 145px;

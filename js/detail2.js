@@ -58,7 +58,9 @@ $(function(){
 	console.log($leftzoom);
 	var $rightzoom = $("#bigZoom");
 	var $bigimg = $("#bigZoom img");
+	var $big = $("#bigZoom");
 	$leftzoom.mousemove(function(e){
+		$big.show();
 		$bigimg.show();
 		$zoom.show();
 		var _left = e.pageX-$leftzoom.offset().left-0.5*$zoom.width();
@@ -81,6 +83,7 @@ $(function(){
 		
 	})
 	$leftzoom.mouseout(function(){
+		$big.hide()
 		$zoom.hide();
 		$bigimg.hide();
 	})
