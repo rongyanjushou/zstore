@@ -23,6 +23,13 @@ $(function(){
 	$("#huakuai .shangqu").click(function(){
 		$("html,body").animate({"scrollTop":0},0)
 	})
+	$("#huakuai .shangqu").hover(function(){
+		$(this).children().eq(0).hide();
+		$(this).children().eq(1).show();
+	},function(){
+		$(this).children().eq(0).show();
+		$(this).children().eq(1).hide();
+	})
 	
 	
 	

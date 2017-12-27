@@ -44,16 +44,15 @@ $(function(){
 		var aLi = $("#cartbox")[0].children;
 		var oZongjia = document.getElementById("zongjia");
 		var oCart = $("#cartbox")[0];
+		var oZongjian = document.getElementById("zongjian");
 			
 			for(var i = 0; i < aJian.length; i++){
 				aJian[i].onclick = function(){
 					
 					var oInput = this.nextElementSibling || this.nextSibling;
-					//console.log(oInput);
 					oInput.value--;
 					
 					var id = this.parentNode.parentNode.getAttribute("data-id");
-					//console.log(id);
 					
 					obj[id] = parseInt(oInput.value);
 					jszj();
@@ -66,11 +65,9 @@ $(function(){
 				aJia[i].onclick = function(){
 					
 					var oInput = this.previousElementSibling || this.previousSibling;
-					//console.log(oInput);
 					oInput.value++;
 					
 					var id = this.parentNode.parentNode.getAttribute("data-id");
-					//console.log(id);
 					
 					obj[id] = parseInt(oInput.value);
 					jszj();
@@ -94,7 +91,6 @@ $(function(){
 				aDel[i].onclick = function(){
 					
 					var id = this.parentNode.getAttribute("data-id");
-					console.log(this.parentNode);
 					oCart.removeChild(this.parentNode);
 					delete obj[id];
 					jszj();
@@ -106,12 +102,13 @@ $(function(){
 			
 			function jszj(){
 				var totalPrice = 0;
+				var totalNum = 0;
 				for(var i in obj){
 					var price = data[i].price.replace("￥","");
 					totalPrice += obj[i]*price;
-					console.log(obj,price);
+					totalNum +=parseInt(obj[i]) ;
 				}
-				
+				oZongjian.innerHTML = totalNum;
 				oZongjia.innerHTML = totalPrice;
 			}
 			

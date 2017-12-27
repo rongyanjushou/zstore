@@ -80,8 +80,8 @@ input, a {
       width: 290px;
       height: 40px;
       border: 1px solid #CECECE;
-      font: 16px/40px "微软雅黑";
-      color: #CECECE;
+      font: 14px/40px "微软雅黑";
+      color: black;
       margin-top: 20px;
       text-align: left; }
     #section .right p a {

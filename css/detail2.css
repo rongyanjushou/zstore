@@ -262,6 +262,13 @@ a {
       #section .zuo #detailbox img {
         width: 420px;
         height: 420px; }
+      #section .zuo #detailbox .xiaozoom {
+        border: 2px solid red;
+        width: 66px;
+        height: 66px;
+        position: absolute;
+        top: 460px;
+        left: 30px; }
       #section .zuo #detailbox #bigZoom {
         position: absolute;
         width: 420px;
@@ -313,8 +320,23 @@ a {
     margin-left: 140px;
     float: left;
     width: 230px;
-    height: 580px;
-    background: red; }
+    height: 580px; }
+    #section .you h3 {
+      font: 18px/70px "微软雅黑";
+      text-align: center; }
+    #section .you p {
+      font: 12px/35px "微软雅黑";
+      margin-left: 10px; }
+      #section .you p span {
+        color: red; }
+      #section .you p a {
+        font: 14px/35px "微软雅黑";
+        margin-left: 10px;
+        margin-right: 10px; }
+    #section .you p:last-of-type {
+      margin-top: 20px; }
+      #section .you p:last-of-type a:hover {
+        color: crimson; }
   #section #attrshow {
     position: absolute;
     left: 460px;
@@ -388,5 +410,28 @@ a {
       height: 50px;
       background: #ffeded;
       color: crimson; }
+
+#footer {
+  height: 34px;
+  width: 1220px;
+  margin-left: 40px;
+  box-sizing: border-box;
+  background: #CECECE; }
+  #footer h4 {
+    font: 14px/34px "微软雅黑";
+    text-align: left; }
+
+#bottom {
+  overflow: hidden;
+  width: 1220px;
+  margin-left: 40px;
+  border: 1px solid #ECECEC;
+  padding: 30px;
+  box-sizing: border-box; }
+  #bottom img {
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px; }
 
 /*# sourceMappingURL=detail2.css.map */

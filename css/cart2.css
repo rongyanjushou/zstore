@@ -210,4 +210,46 @@ a {
     width: 50px;
     border: 1px solid #CECECE; }
 
+#bottom {
+  cursor: pointer;
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 12px;
+  box-sizing: border-box; }
+
+#footer {
+  border-top: 1px solid #CECECE;
+  height: 145px;
+  width: 960px;
+  margin: 0 auto; }
+  #footer ul {
+    margin-top: 25px; }
+    #footer ul li {
+      float: left;
+      border-right: 1px solid #CECECE; }
+      #footer ul li a {
+        display: block;
+        margin-right: 12px;
+        margin-left: 12px;
+        font: 14px/14px "微软雅黑";
+        color: blue; }
+      #footer ul li a:hover {
+        color: crimson; }
+    #footer ul li:first-of-type {
+      margin-left: 245px; }
+    #footer ul li:last-of-type {
+      border: none; }
+  #footer p {
+    clear: both;
+    font: 14px/50px "微软雅黑";
+    color: black;
+    text-align: center; }
+  #footer div img {
+    cursor: pointer;
+    float: left;
+    margin-left: 10px; }
+  #footer div img:first-of-type {
+    margin-left: 300px; }
+
 /*# sourceMappingURL=cart2.css.map */

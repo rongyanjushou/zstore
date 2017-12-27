@@ -15,9 +15,51 @@
 	},
 	"1003":{
 		"id":"1003",
-		"name":"无敌眼镜",
+		"name":"小米眼镜",
 		"price":"￥49.00",
-		"store":"张俊杰无敌",
-		"imgsrc":"img/liebiao01.jpg"
+		"store":"汇通数码风暴专营店",
+		"imgsrc":"img/liebiao3.jpg"
+	},
+	"1004":{
+		"id":"1004",
+		"name":"三星眼镜",
+		"price":"￥258.00",
+		"store":"三味腾达专营店",
+		"imgsrc":"img/liebiao4.jpg"
+	},
+	"1005":{
+		"id":"1005",
+		"name":"暴风魔镜",
+		"price":"￥199.00",
+		"store":"正德科技电信专营店",
+		"imgsrc":"img/liebiao5.jpg"
+	},
+	"1006":{
+		"id":"1006",
+		"name":"小米眼镜",
+		"price":"￥49.00",
+		"store":"汇通数码风暴专营店",
+		"imgsrc":"img/liebiao6.jpg"
+	},
+	"1007":{
+		"id":"1007",
+		"name":"三星眼镜",
+		"price":"￥258.00",
+		"store":"三味腾达专营店",
+		"imgsrc":"img/liebiao7.jpg"
+	},
+	"1008":{
+		"id":"1008",
+		"name":"暴风魔镜",
+		"price":"￥199.00",
+		"store":"正德科技电信专营店",
+		"imgsrc":"img/liebiao8.jpg"
+	},
+	"1009":{
+		"id":"1009",
+		"name":"小米眼镜",
+		"price":"￥49.00",
+		"store":"汇通数码风暴专营店",
+		"imgsrc":"img/liebiao9.jpg"
 	}
 }

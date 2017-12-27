@@ -288,6 +288,7 @@ a{color: black;}/*清除input自带边框*/
             height: 420px;
             width: 420px;
             position: relative;
+            
             .zoom{
                 position: absolute;
                 width: 210px;
@@ -302,6 +303,14 @@ a{color: black;}/*清除input自带边框*/
             img{
                 width: 420px;
                 height: 420px;
+            }
+            .xiaozoom{
+                border: 2px solid red;
+                width: 66px;
+                height: 66px;
+                position: absolute;
+                top:460px;
+                left:30px;
             }
         #bigZoom{
             position: absolute;
@@ -369,7 +378,28 @@ a{color: black;}/*清除input自带边框*/
         float: left;
         width: 230px;
         height: 580px;
-        background: red;
+        h3{
+            font:18px/70px "微软雅黑";
+            text-align: center;
+        }
+        p{
+            font:12px/35px "微软雅黑";
+            margin-left: 10px;
+            span{
+                color: red;
+            }
+            a{
+                font:14px/35px "微软雅黑";
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+        p:last-of-type{
+            margin-top: 20px;
+            a:hover{
+                color:crimson;
+            }
+        }
     }
     #attrshow{
         position: absolute;
@@ -457,5 +487,30 @@ a{color: black;}/*清除input自带边框*/
             background: #ffeded;
             color: crimson;
         }
+    }
+}
+#footer{
+    height: 34px;
+    width: 1220px;
+    margin-left: 40px;
+    box-sizing: border-box;
+    background: #CECECE;
+    h4{
+        font:14px/34px "微软雅黑";
+        text-align: left;
+    }
+}
+#bottom{
+    overflow: hidden;
+    width: 1220px;
+    margin-left: 40px;
+    border: 1px solid #ECECEC;
+    padding: 30px;
+    box-sizing: border-box;
+    img{
+        float: left;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="font/iconfont.css" />
 	</head>
 	<body>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/lunbo.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/tab.js" type="text/javascript" charset="utf-8"></script>
@@ -17,8 +18,8 @@
 			<img class="shouji" src="img/shouji.jpg"/>
 			<ul class="oul">
 				<li><a href="">商城首页</a></li>
-				<li><em>Hi~欢迎来到Z商城，请</em><a href=""><span>登录</span></a></li>
-				<li><a href=""><span>免费注册</span></a></li>
+				<li><em>Hi~欢迎来到Z商城，请</em><a href="denglu.html"><span>登录</span></a></li>
+				<li><a href="zhuce.html"><span>免费注册</span></a></li>
 				<li><a href="">我的订单</a></li>
 				<li><a href="">买家中心∨</a>
 					<ul class="maijia">
@@ -26,18 +27,20 @@
 						<li><a href="">关注的商品</a></li>
 					</ul>
 				</li>
-				<li><a href="">购物车<span>0</span>件</a></li>
+				<li><a href="cart2.html">购物车<span id="zongjian">0</span>件</a></li>
 				<li><a href="">帮助中心</a></li>
 				<li class="list"><a href="">手机商城∨</a><img class="shangcheng" src="img/shangcheng.png"/></li>
 				<li><a href="">中关村在线</a></li>
 				<li class="list2"><a href="">联系客服∨</a><img class="dianhua" src="img/dianhua.png"/></li>
 			</ul>
 		</div>
+		
 		<!-------------------------top----------------------------->
+		
 		<div id="header">
 			<p class="liebiao"><a href=""><i class="iconfont icon-dingdan">&nbsp;我的订单</i></a>
 			<a href=""><i class="iconfont icon-youhuiquan">&nbsp;我的优惠券</i></a>
-			<a href=""><i class="iconfont icon-gouwuchekong">&nbsp;购物车</i></a></p>
+			<a href="cart2.html"><i class="iconfont icon-gouwuchekong">&nbsp;购物车</i></a></p>
 			<p class="sanxing">三星Note8</p>
 			<span>年终盛典，钜惠狂欢</span>
 			<a href=""><img src="img/shouyelogo.jpg"/></a>
@@ -57,7 +60,9 @@
 			<input type="text" name="" id="btn2" placeholder="&nbsp;&nbsp;&nbsp;找找您想要的商品" /><input type="button" name="" id="btn1" value="搜索" />
 			
 		</div>
+		
 		<!------------------------header--------------------------->
+		
 		<div id="nav">
 			<ul>
 				<li><a href=""><i class="iconfont icon-liebiao"></i><em class="fenlei">全部分类</em></a></li>
@@ -66,7 +71,9 @@
 				<li><a href="">电子竞技</a></li>
 			</ul>
 		</div>
+		
 		<!-------------------------nav----------------------------->
+		
 		<div id="banner">
 		<!---轮播图--->
 			<div class="pic">
@@ -109,7 +116,9 @@
 				{{/each}}
 		</script>
 		</div>
+		
 		<!------------------------banner--------------------------->
+		
 		<div id="dongyu">
 			<div class="left">
 				<img src="img/qingsongsheng.jpg"/>
@@ -135,7 +144,9 @@
 				
 			</div>
 		</div>
+		
 		<!------------------------dongyu--------------------------->
+		
 		<div id="lingquan">
 			<div class="first">
 				<p>领券中心</p>
@@ -167,7 +178,9 @@
 				<span><a href="">立即领取>></a></span>
 			</div>
 		</div>
+		
 		<!------------------------lingquan------------------------->
+		
 		<div id="tongcheng">
 			<p>同城购<span>同城、身边、退换无忧</span></p>
 			<a href=""><img src="img/gengduo.jpg"/></a>
@@ -197,7 +210,9 @@
 				{{/each}}
 			</script>
 		</div>
+		
 		<!------------------------tongcheng------------------------>
+		
 		<div id="zhixuan">
 			<p>Z智选</p>
 			<div class="shang">
@@ -234,7 +249,9 @@
 				<div class="foot"></div>
 			</div>
 		</div>
+		
 		<!------------------------zhixuan-------------------------->
+		
 		<div id="pinpai">
 		<p>品牌精选<span>大牌、保障、服务赞</span></p>
 			<div class="bigbox">
@@ -252,7 +269,9 @@
 				{{/each}}
 			</script>
 		</div>
+		
 		<!-------------------------pinpai-------------------------->
+		
 		<div id="dianzi">
 			<p>电子竞技</p>
 			<a href=""><img src="img/gengduo.jpg"/></a>
@@ -311,7 +330,9 @@
 				{{/each}}
 			</script>
 		</div>
+		
 		<!--------------------------dianzi------------------------->
+		
 		<div id="shuma">
 			<p>数码潮品<span>潮流、前端、黑科技</span></p>
 			<div class="left">
@@ -335,7 +356,9 @@
 				</div>
 			</div>
 		</div>
+		
 		<!--------------------------shuma-------------------------->
+		
 		<div id="rexiao">
 			<p>本周热销</p>
 			<div class="big">
@@ -355,7 +378,9 @@
 			</script>
 			
 		</div>
+		
 		<!--------------------------rexiao------------------------->
+		
 		<div id="peifu">
 			<a href=""><img src="img/pei.jpg"/></a><a href=""><img src="img/pei2.jpg"/></a>
 			<a href=""><img src="img/pei3.jpg"/></a>
@@ -363,7 +388,9 @@
 			<a href=""><img src="img/pei5.jpg"/></a>
 			<a href=""><img src="img/pei6.jpg"/></a>
 		</div>
+		
 		<!---------------------------peifu------------------------->
+		
 		<div id="bottom">
 			<ul>
 				<li>购物指南</li>
@@ -401,7 +428,9 @@
 			<img src="img/tou.jpg"/>
 			<img src="img/shou.jpg"/>
 		</div>
+		
 		<!---------------------------bottom------------------------>
+		
 		<div id="footer">
 			<ul class="ul1">
 				<li><a href="">中关村在线</a></li>
@@ -431,7 +460,9 @@
 				<p>广告</p>
 			</div>
 		</div>
+		
 		<!---------------------------footer------------------------>
+		
 		<div id="huakuai">
 			<div><img src="img/huakuai1.png"/><img src="img/huakuai11.png"/></div>
 			<div><img src="img/huakuai2.png"/><img src="img/huakuai22.png"/></div>
