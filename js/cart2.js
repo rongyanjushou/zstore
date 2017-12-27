@@ -25,6 +25,7 @@ $(function(){
 			oDate.setDate(oDate.getDate() + n);
 			document.cookie = name + "=" + value + ";expires=" + oDate;
 		}
+		
 		if(getCookie("cart")){
 				var obj = JSON.parse(getCookie("cart"));
 			}else{
@@ -99,6 +100,14 @@ $(function(){
 					
 				}				
 			}
+			$("#qingkong").click(function(){
+				$("#cartbox")[0].innerHTML=null;
+				 obj = {};
+				 jszj();
+				var str = JSON.stringify(obj);
+				setCookie("cart",str,7);
+				
+			})
 			
 			function jszj(){
 				var totalPrice = 0;

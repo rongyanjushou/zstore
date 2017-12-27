@@ -121,11 +121,17 @@ a {
       color: white; }
 
 #nav {
+  position: relative;
   width: 960px;
   height: 85px;
   margin: 0 auto;
   padding-top: 30px;
   box-sizing: border-box; }
+  #nav #qingkong {
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    color: crimson; }
   #nav p {
     float: right;
     font: 14px/30px "微软雅黑"; }
